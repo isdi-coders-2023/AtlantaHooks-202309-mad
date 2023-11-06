@@ -54,7 +54,7 @@ Testing con coverage. Todos los tipos de tests que hemos visto.
 
 Optimizada (Lighthouse en Netlify / Vercel)
 
-Challenge WeekEnd
+Challenge WeekEnd..
 Seleccionar
 API: probarla -> consistencia / rendimiento / no pago
 Diseño en Figma
