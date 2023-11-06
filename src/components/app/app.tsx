@@ -1,3 +1,8 @@
+import { Footer } from '../footer/footer';
 export function App() {
-  return <div></div>;
+  return (
+    <div>
+      <Footer></Footer>
+    </div>
+  );
 }
