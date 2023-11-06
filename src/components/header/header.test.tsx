@@ -13,4 +13,3 @@ describe('Given Header component', () => {
     });
   });
 });
-
