@@ -3,7 +3,6 @@ import { render, fireEvent } from '@testing-library/react';
 import { AppContext, ContextStructure } from './context';
 import '@testing-library/jest-dom';
 
-// Mock del componente que usa el contexto
 function MockComponent() {
   const { page, setPage } = useContext<ContextStructure>(AppContext);
 
@@ -22,7 +21,7 @@ function MockComponent() {
 test('Context test', () => {
   const contextValue: ContextStructure = {
     page: 2,
-    setPage: jest.fn(), // Usamos una función jest.fn() para simular setPage
+    setPage: jest.fn(),
   };
 
   const { getByText } = render(
