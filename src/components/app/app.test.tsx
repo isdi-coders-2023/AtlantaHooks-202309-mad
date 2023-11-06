@@ -10,6 +10,9 @@ describe('Given App component', () => {
     test('renders App with Footer', () => {
       expect(screen.getByText('Atlanta Hooks Team')).toBeInTheDocument();
     });
+    test('renders App with Header', () => {
+      expect(screen.getByText('COUNTRIES')).toBeInTheDocument();
+    });
   });
 });
 
