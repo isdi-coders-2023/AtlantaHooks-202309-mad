@@ -1,9 +1,9 @@
 import { Country } from '../model/country.types';
 
-export type ActionCountryTypes = 'load';
+export type ActionCountryTypes = 'load' | 'unknown';
 
 type ActionCountryAll = {
-  type: 'load';
+  type: 'load' | 'unknown';
   payload: Country[];
 };
 

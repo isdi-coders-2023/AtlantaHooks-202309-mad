@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { AppContext } from '../../context/context';
-import { Card } from '../card/card';
+import { Card } from '../cards/card';
 
 export function List() {
   const {

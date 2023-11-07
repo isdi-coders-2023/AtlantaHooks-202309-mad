@@ -22,6 +22,10 @@ test('Context test', () => {
   const contextValue: ContextStructure = {
     page: 2,
     setPage: jest.fn(),
+    countryTools: {
+      countries: [],
+      loadCountries: jest.fn(),
+    },
   };
 
   const { getByText } = render(
