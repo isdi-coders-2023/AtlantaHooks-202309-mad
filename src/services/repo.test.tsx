@@ -1,5 +1,5 @@
 import { Country } from '../model/country.types';
-import { getCountries } from './repo';
+import { Repo } from '../services/repo';
 
 describe('Given repo class', () => {
   describe('When we instantiate it and response is ok', () => {
@@ -11,9 +11,10 @@ describe('Given repo class', () => {
         json: jsonMock,
       });
     });
-    test('Then method getTask should be used', async () => {
+    test('Then method getCountry should be used', async () => {
       const expected: Country[] = [];
-      const result = await getCountries();
+      const repo = new Repo();
+      const result = await repo.getCountry();
       expect(jsonMock).toHaveBeenCalled();
       expect(result).toStrictEqual(expected);
     });
@@ -26,8 +27,8 @@ describe('When we instantiate it and response is bad', () => {
       ok: false,
     });
   });
-  test('Then method getTask should be used', async () => {
-    const repo = getCountries();
-    expect(repo).rejects.toThrow();
+  test('Then method getCountry should throw an error', async () => {
+    const repo = new Repo(); // Crear una instancia de Repo
+    await expect(repo.getCountry()).rejects.toThrow();
   });
 });

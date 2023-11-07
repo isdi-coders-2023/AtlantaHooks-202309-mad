@@ -1,6 +1,9 @@
 import { Country } from '../model/country.types';
 
 export class Repo {
+  static getCountry() {
+    throw new Error('Method not implemented.');
+  }
   apiUrl = 'https://restcountries.com/v3.1/all';
 
   async getCountry(): Promise<Country[]> {
