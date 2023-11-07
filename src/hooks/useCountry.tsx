@@ -1,9 +1,10 @@
-import { useState, useMemo, useCallback } from 'react';
-import { Country } from '../model/country.types';
+import { useMemo, useCallback, useReducer } from 'react';
 import { Repo } from '../services/repo';
+import { countryReducer } from '../reducers/reducer';
+import * as ac from '../reducers/actions';
 
 export function useCountry() {
-  const [countries, setCountries] = useState<Country[]>([]);
+  const [countries, dispatch] = useReducer(countryReducer, []);
 
   const repo = useMemo(() => new Repo(), []);
 
@@ -12,7 +13,7 @@ export function useCountry() {
       // Asíncrona
       const loadedCountries = await repo.getCountry();
       // Síncrono
-      setCountries(loadedCountries);
+      dispatch(ac.loadActionCreator(loadedCountries));
     } catch (error) {
       console.log((error as Error).message);
     }
