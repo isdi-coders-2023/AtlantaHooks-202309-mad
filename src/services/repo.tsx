@@ -8,3 +8,4 @@ export const getCountries = async (): Promise<Country[]> => {
     throw new Error(response.status + ' ' + response.statusText);
   return response.json();
 };
+

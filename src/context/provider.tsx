@@ -11,6 +11,7 @@ export function AppContextProvider({ children }: Props) {
   const context: ContextStructure = {
     page,
     setPage,
+    countryTools: countryState,
   };
 
   return <AppContext.Provider value={context}>{children}</AppContext.Provider>;
