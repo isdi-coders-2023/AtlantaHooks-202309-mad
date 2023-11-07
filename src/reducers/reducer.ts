@@ -1,8 +1,3 @@
-// Reducer
-// Función pura
-// Recibe el estado y una acción
-// Retorna un nuevo estado
-
 import { Country } from '../model/country.types';
 import { ActionCountry } from './actions';
 

@@ -3,9 +3,6 @@ import { AppContext, ContextStructure } from '../../context/context';
 import { List } from './list';
 import '@testing-library/jest-dom';
 import { Country } from '../../model/country.types';
-// import { Card } from '../card/card';
-
-// jest.mock('../card/card');
 
 const mockContext: ContextStructure = {
   countryTools: {

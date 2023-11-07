@@ -41,15 +41,11 @@ describe('useCountry', () => {
 
     render(<TestComponent />);
 
-    // Verifica que el botón "Load Countries" está presente
     expect(screen.getByText('Load Countries')).toBeInTheDocument();
 
-    // Simula hacer clic en el botón
     userEvent.click(screen.getByText('Load Countries'));
 
-    // Espera a que se carguen los países y se renderice la lista
     await waitFor(() => {
-      // Busca el texto exacto en los elementos li
       expect(screen.getByText('Country 1')).toBeInTheDocument();
       expect(screen.getByText('Country 2')).toBeInTheDocument();
     });
