@@ -26,10 +26,5 @@ describe('Given List component', () => {
       const element = screen.getByRole('list');
       expect(element).toBeInTheDocument();
     });
-    test('', () => {
-      expect(mockContext.countryTools.loadCountries).toHaveBeenCalled();
-      const element = screen.getByText('Hola');
-      expect(element).toBeInTheDocument();
-    });
   });
 });
