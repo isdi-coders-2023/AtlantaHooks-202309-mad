@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { Header } from './header'; // Asegúrate de que la ruta sea correcta
+import { Header } from './header';
 import '@testing-library/jest-dom';
 
 describe('Given Header component', () => {
