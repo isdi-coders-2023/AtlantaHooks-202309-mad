@@ -7,7 +7,7 @@ export function App() {
     <>
       <Header></Header>
       <List></List>
-      <Footer></Footer>;
+      <Footer></Footer>
     </>
   );
 }

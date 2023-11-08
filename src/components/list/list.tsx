@@ -1,10 +1,12 @@
 import { useContext, useEffect } from 'react';
 import { AppContext } from '../../context/context';
 import { Card } from '../cards/card';
+import { Page } from '../pages/page';
 
 export function List() {
   const {
-    countryTools: { countries, loadCountries },
+    loadCountries,
+    countriesState: { page, country },
   } = useContext(AppContext);
 
   useEffect(() => {
@@ -14,10 +16,11 @@ export function List() {
   return (
     <div>
       <ul className="country_list">
-        {countries.map((item) => (
-          <Card country={item} key={item.name.common}></Card>
+        {country.slice((page - 1) * 8, page * 8).map((item) => (
+          <Card country={item} key={item.name.common} />
         ))}
       </ul>
+      <Page />
     </div>
   );
 }

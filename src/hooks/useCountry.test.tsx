@@ -1,53 +1,48 @@
-import { render, screen } from '@testing-library/react';
-/* import userEvent from '@testing-library/user-event'; */
+import { act, renderHook } from '@testing-library/react';
 import { useCountry } from './useCountry';
-import fetchMock from 'jest-fetch-mock';
-
-import '@testing-library/jest-dom';
 
 jest.mock('../services/repo', () => ({
-  Repo: jest.fn(),
+  Repo: jest.fn(() => ({
+    getCountry: jest.fn(() => Promise.resolve([])),
+  })),
 }));
 
-beforeAll(() => {
-  fetchMock.enableMocks();
-});
-
-afterEach(() => {
-  fetchMock.resetMocks();
-});
-
-describe('useCountry', () => {
-  it('should fetch and load countries successfully', async () => {
-    const mockCountries = [{ name: 'Country 1' }, { name: 'Country 2' }];
-    fetchMock.mockResponse(JSON.stringify(mockCountries), {
-      status: 200,
-      headers: { 'Content-type': 'application/json' },
+describe('Given useCountry custom Hook', () => {
+  describe('useCountry Hook', () => {
+    it('should load countries and update state', async () => {
+      const { result } = renderHook(() => useCountry());
+      act(() => {
+        result.current.loadCountries();
+      });
+      expect(result.current.countriesState.country).toHaveLength(0);
     });
 
-    function TestComponent() {
-      const { countries, loadCountries } = useCountry();
-      return (
-        <div>
-          <button onClick={loadCountries}>Load Countries</button>
-          <ul>
-            {countries.map((country, index) => (
-              <li key={index}>{country.name.common}</li>
-            ))}
-          </ul>
-        </div>
-      );
-    }
+    it('should change the page correctly', () => {
+      const { result } = renderHook(() => useCountry());
+      act(() => {
+        result.current.handleChangePage(1);
+      });
+      expect(result.current.countriesState.page).toBe(2);
+      act(() => {
+        result.current.handleChangePage(-1);
+      });
+      expect(result.current.countriesState.page).toBe(1);
+    });
 
-    render(<TestComponent />);
+    it('should handle increment greater than 1 correctly', () => {
+      const { result } = renderHook(() => useCountry());
+      act(() => {
+        result.current.handleChangePage(2);
+      });
+      expect(result.current.countriesState.page).toBe(3);
+    });
 
-    expect(screen.getByText('Load Countries')).toBeInTheDocument();
-
-    /* userEvent.click(screen.getByText('Load Countries'));
-
-    await waitFor(() => {
-      expect(screen.getByText('Country 1')).toBeInTheDocument();
-      expect(screen.getByText('Country 2')).toBeInTheDocument();
-    }); */
+    it('should handle decrement that goes below the minimum page correctly', () => {
+      const { result } = renderHook(() => useCountry());
+      act(() => {
+        result.current.handleChangePage(-1);
+      });
+      expect(result.current.countriesState.page).toBe(1);
+    });
   });
 });

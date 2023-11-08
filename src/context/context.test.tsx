@@ -1,45 +1,37 @@
-import { useContext } from 'react';
-import { render, fireEvent } from '@testing-library/react';
-import { AppContext, ContextStructure } from './context';
+import { render } from '@testing-library/react';
+import { AppContextProvider } from '../context/provider';
+import { useCountry } from '../hooks/useCountry';
+import { AppContext } from './context';
 import '@testing-library/jest-dom';
 
-function MockComponent() {
-  const { page, setPage } = useContext<ContextStructure>(AppContext);
+jest.mock('../hooks/useCountry');
 
-  const handleButtonClick = () => {
-    setPage(page + 1);
-  };
+const mockContextData = {
+  countriesState: {
+    country: [{ name: 'Country 1' }, { name: 'Country 2' }],
+    page: 1,
+  },
+  loadCountries: jest.fn(),
+  handleChangePage: jest.fn(),
+};
 
-  return (
-    <div>
-      <p>Current Page: {page}</p>
-      <button onClick={handleButtonClick}>Increment Page </button>
-    </div>
-  );
-}
+describe('AppContext', () => {
+  it('Must be initialized correctly', () => {
+    (useCountry as jest.Mock).mockReturnValue(mockContextData);
+    const { container } = render(
+      <AppContextProvider>
+        <AppContext.Consumer>
+          {(value) => (
+            <div data-test="context-test">
+              Country Count: {value.countriesState.country.length}
+              Page: {value.countriesState.page}
+            </div>
+          )}
+        </AppContext.Consumer>
+      </AppContextProvider>
+    );
 
-test('Context test', () => {
-  const contextValue: ContextStructure = {
-    page: 2,
-    setPage: jest.fn(),
-    countryTools: {
-      countries: [],
-      loadCountries: jest.fn(),
-    },
-  };
-
-  const { getByText } = render(
-    <AppContext.Provider value={contextValue}>
-      <MockComponent />
-    </AppContext.Provider>
-  );
-
-  expect(getByText('Current Page: 2')).toBeInTheDocument();
-
-  const button = getByText('Increment Page');
-  fireEvent.click(button);
-
-  expect(contextValue.setPage).toHaveBeenCalledTimes(1);
-
-  expect(contextValue.setPage).toHaveBeenCalledWith(3);
+    expect(container).toHaveTextContent('Country Count: 2');
+    expect(container).toHaveTextContent('Page: 1');
+  });
 });
