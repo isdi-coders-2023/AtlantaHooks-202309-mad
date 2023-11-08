@@ -1,38 +1,31 @@
-import { screen, render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Page } from './page';
-import { userEvent } from '@testing-library/user-event';
+import userEvent from '@testing-library/user-event';
 import { AppContext, ContextStructure } from '../../context/context';
+import { Page } from './page';
 
-describe('Given Footer component', () => {
+const mockContext: ContextStructure = {
+  handleChangePage: jest.fn(),
+} as unknown as ContextStructure;
+describe('Given list component', () => {
   describe('When we instantiate', () => {
-    const setPage = jest.fn();
-    const page = 1;
-    const value: ContextStructure = {
-      page,
-      setPage,
-    } as unknown as ContextStructure;
-
     beforeEach(() => {
       render(
-        <AppContext.Provider value={value}>
+        <AppContext.Provider value={mockContext}>
           <Page />
         </AppContext.Provider>
       );
     });
 
-    test('It should call handlePrevious', async () => {
-      const element = screen.getAllByRole('button')[0];
-      expect(element).toBeInTheDocument();
-      await userEvent.click(element);
-      expect(setPage).toHaveBeenCalledWith(1);
+    test('Page component', async () => {
+      const nextButton = screen.getByText('Next Page');
+      await userEvent.click(nextButton);
+      expect(mockContext.handleChangePage).toHaveBeenCalled();
     });
-
-    test('It should call handleNext', async () => {
-      const element = screen.getAllByRole('button')[1];
-      expect(element).toBeInTheDocument();
-      await userEvent.click(element);
-      expect(setPage).toHaveBeenCalledWith(2);
+    test('Page component', async () => {
+      const prevButton = screen.getByText('Previous Page');
+      await userEvent.click(prevButton);
+      expect(mockContext.handleChangePage).toHaveBeenCalled();
     });
   });
 });
