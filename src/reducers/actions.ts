@@ -1,15 +1,24 @@
 import { Country } from '../model/country.types';
 
-export type ActionCountryTypes = 'load' | 'unknown';
+export type ActionCountryAll = 'load' | 'unknown' | 'changePage';
 
-type ActionCountryAll = {
-  type: 'load' | 'unknown';
+type ActionCountryLoad = {
+  type: 'load';
   payload: Country[];
 };
+type ActionChangePage = {
+  type: 'changePage';
+  payload: number;
+};
 
-export type ActionCountry = ActionCountryAll;
+export type ActionCountry = ActionCountryLoad | ActionChangePage;
 
 export const loadActionCreator = (payload: Country[]): ActionCountry => ({
   type: 'load',
+  payload,
+});
+
+export const changePageActionCreator = (payload: number): ActionCountry => ({
+  type: 'changePage',
   payload,
 });

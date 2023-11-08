@@ -1,15 +1,20 @@
 import { Country } from '../model/country.types';
 import { ActionCountry } from './actions';
 
+type AppState = {
+  country: Country[];
+  page: number;
+};
 export function countryReducer(
-  state: Country[],
+  state: AppState,
   { type, payload }: ActionCountry
-): Country[] {
+): AppState {
   switch (type) {
     case 'load':
-      return payload;
-
+      return { ...state, country: payload };
+    case 'changePage':
+      return { ...state, page: payload };
     default:
-      return [...state];
+      return { ...state };
   }
 }

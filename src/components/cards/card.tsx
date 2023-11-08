@@ -1,22 +1,19 @@
-import { useContext } from 'react';
-import { AppContext } from '../../context/context';
+import './card.scss';
+import { Country } from '../../model/country.types';
 
-export function Page() {
-  const { page, setPage } = useContext(AppContext);
-  const handleChangePage = (increment: number) => {
-    if (page === 1 && increment === -1) {
-      setPage(page);
-    } else if (page === 25 && increment === +1) {
-      setPage(page);
-    } else {
-      setPage(page + increment);
-    }
-  };
+type PropsType = {
+  country: Country;
+};
+export const Card = ({ country }: PropsType) => {
+  const handleAddToFavorites = () => {};
 
   return (
-    <>
-      <button onClick={() => handleChangePage(+1)}>Next Page</button>
-      <button onClick={() => handleChangePage(-1)}>Previous Page</button>
-    </>
+    <div className="card">
+      <h2>{country.name.official}</h2>
+      <p>{country.capital}</p>
+      <p>{country.region}</p>
+      <button onClick={handleAddToFavorites}>Añadir a favoritos</button>
+    </div>
   );
-}
+};
+export default Card;

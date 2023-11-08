@@ -4,7 +4,7 @@ import { useCountry } from '../hooks/useCountry';
 
 export type ContextStructure = {
   page: number;
-  setPage: (actualDisplay: number) => void;
+  setPage: (page: number) => void;
   countryTools: ReturnType<typeof useCountry>;
 };
 
