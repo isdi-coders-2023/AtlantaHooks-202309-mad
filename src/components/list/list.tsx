@@ -5,10 +5,9 @@ import { Page } from '../pages/page';
 
 export function List() {
   const {
-    countryTools: { countries, loadCountries },
+    loadCountries,
+    countriesState: { page, country },
   } = useContext(AppContext);
-
-  const { page } = useContext(AppContext);
 
   useEffect(() => {
     loadCountries();
@@ -17,7 +16,7 @@ export function List() {
   return (
     <div>
       <ul className="country_list">
-        {countries.slice((page - 1) * 8, page * 8).map((item, i) => (
+        {country.slice((page - 1) * 8, page * 8).map((item, i) => (
           <Card country={item} key={item.name.common} />
         ))}
       </ul>
