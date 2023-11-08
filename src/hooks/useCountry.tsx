@@ -17,9 +17,7 @@ export function useCountry() {
       const loadedCountries = await repo.getCountry();
       // Síncrono
       dispatch(ac.loadActionCreator(loadedCountries));
-    } catch (error) {
-      console.log((error as Error).message);
-    }
+    } catch (error) {}
   }, [repo]);
   const handleChangePage = (increment: number) => {
     if (countriesState.page === 1 && increment === -1) {
