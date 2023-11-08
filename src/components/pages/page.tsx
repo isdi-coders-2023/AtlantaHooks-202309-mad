@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { AppContext } from '../../context/context';
 
 export function Page() {
-  const { page, setPage } = useContext(AppContext);
+  const { handleChangePage } = useContext(AppContext);
 
   return (
     <>

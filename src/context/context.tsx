@@ -2,11 +2,7 @@ import { createContext } from 'react';
 
 import { useCountry } from '../hooks/useCountry';
 
-export type ContextStructure = {
-  page: number;
-  setPage: (page: number) => void;
-  countryTools: ReturnType<typeof useCountry>;
-};
+export type ContextStructure = ReturnType<typeof useCountry>;
 
 const initialContext = {} as ContextStructure;
 
