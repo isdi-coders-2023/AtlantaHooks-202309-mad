@@ -5,12 +5,8 @@ import '@testing-library/jest-dom';
 import { Country } from '../../model/country.types';
 
 const mockContext: ContextStructure = {
-  countryTools: {
-    countries: [{ name: { common: 'Hola' } }] as Country[],
-    loadCountries: jest
-      .fn()
-      .mockResolvedValue([{ name: { common: 'Hola' } } as Country]),
-  },
+  countriesState: { page: 1, country: [] as Country[] },
+  loadCountries: jest.fn(),
 } as unknown as ContextStructure;
 
 describe('Given List component', () => {
