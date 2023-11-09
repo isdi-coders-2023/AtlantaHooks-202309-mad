@@ -1,12 +1,12 @@
 import { Footer } from '../footer/footer';
 import { Header } from '../header/header';
-import { List } from '../list/list';
+import { Router } from '../../components/router/router';
 
 export function App() {
   return (
     <>
       <Header></Header>
-      <List></List>
+      <Router></Router>
       <Footer></Footer>
     </>
   );

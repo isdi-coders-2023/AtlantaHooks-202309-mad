@@ -1,1 +1,15 @@
-
+header {
+  background-image: url('../../..//footer_background.png');
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+    padding-block: 1rem;
+    color: white;
+    color: #fff; /* Color del texto */
+    text-shadow: -1px -1px 0 #000,
+      /* Sombra superior izquierda */ 1px -1px 0 #000,
+      /* Sombra superior derecha */ -1px 1px 0 #000,
+      /* Sombra inferior izquierda */ 1px 1px 0 #000; /* Sombra inferior derecha */
+  }
+}

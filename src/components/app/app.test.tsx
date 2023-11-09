@@ -3,11 +3,11 @@ import '@testing-library/jest-dom';
 import { App } from './app';
 
 import { Footer } from '../footer/footer';
-import { List } from '../list/list';
 import { Header } from '../header/header';
+import { Router } from '../router/router';
 
 jest.mock('../footer/footer');
-jest.mock('../list/list');
+jest.mock('../router/router');
 jest.mock('../header/header');
 
 describe('Given App component', () => {
@@ -19,7 +19,7 @@ describe('Given App component', () => {
       expect(Footer).toHaveBeenCalled();
     });
     test('renders App with List', () => {
-      expect(List).toHaveBeenCalled();
+      expect(Router).toHaveBeenCalled();
     });
     test('renders App with Header', () => {
       expect(Header).toHaveBeenCalled();
