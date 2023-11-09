@@ -19,6 +19,7 @@ export function useCountry() {
       dispatch(ac.loadActionCreator(loadedCountries));
     } catch (error) {}
   }, [repo]);
+
   const handleChangePage = (increment: number) => {
     if (countriesState.page === 1 && increment === -1) {
       dispatch(ac.changePageActionCreator(countriesState.page));
@@ -29,5 +30,20 @@ export function useCountry() {
     }
   };
 
-  return { countriesState, loadCountries, handleChangePage };
+  const handleChangeFilter = async (language: string) => {
+    try {
+      countriesState.page = 1;
+      const data = await repo.getCountry(language);
+      dispatch(ac.loadActionCreator(data));
+    } catch (error) {
+      console.error('Error al obtener datos de la API:', error);
+    }
+  };
+
+  return {
+    countriesState,
+    loadCountries,
+    handleChangePage,
+    handleChangeFilter,
+  };
 }

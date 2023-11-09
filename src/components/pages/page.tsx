@@ -6,8 +6,8 @@ export function Page() {
 
   return (
     <>
-      <button onClick={() => handleChangePage(+1)}>Next Page</button>
       <button onClick={() => handleChangePage(-1)}>Previous Page</button>
+      <button onClick={() => handleChangePage(+1)}>Next Page</button>
     </>
   );
 }
