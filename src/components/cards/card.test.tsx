@@ -8,7 +8,13 @@ describe('Given Footer component', () => {
     render(
       <Card
         country={
-          { name: { official: '' }, capital: [''], region: '' } as Country
+          {
+            name: { official: '' },
+            capital: [''],
+            region: '',
+            flags: { png: '' },
+            population: 10,
+          } as Country
         }
       ></Card>
     );
