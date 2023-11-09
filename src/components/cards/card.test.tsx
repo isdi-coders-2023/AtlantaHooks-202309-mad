@@ -2,28 +2,23 @@ import { screen, render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Card } from './card';
 import { Country } from '../../model/country.types';
+import { MemoryRouter as Router } from 'react-router-dom';
 
 describe('Given Footer component', () => {
-  describe('When we instantiate', () => {
+  const mockCountry = {
+    name: { common: 'test', official: 'test' },
+    flags: { png: 'test' },
+  } as Country;
+  beforeEach(() => {
     render(
-      <Card
-        country={
-          {
-            name: { official: '' },
-            capital: [''],
-            region: '',
-            flags: { png: '' },
-            population: 10,
-          } as Country
-        }
-      ></Card>
+      <Router>
+        <Card country={mockCountry}></Card>
+      </Router>
     );
+  });
 
-    test('It should be in the document', () => {
-      const element = screen.getByRole('button');
-      const heading = screen.getByRole('heading');
-      expect(element).toBeInTheDocument();
-      expect(heading).toBeInTheDocument();
-    });
+  test('Then it should render the country name', () => {
+    const element = screen.getByText(mockCountry.name.common);
+    expect(element).toBeInTheDocument();
   });
 });
