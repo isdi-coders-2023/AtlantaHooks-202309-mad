@@ -1,7 +1,7 @@
 import { Country } from '../model/country.types';
 import { ActionCountry } from './actions';
 
-type AppState = {
+export type AppState = {
   country: Country[];
   page: number;
 };
