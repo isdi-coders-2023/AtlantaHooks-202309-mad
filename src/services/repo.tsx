@@ -14,7 +14,6 @@ export class Repo {
       return response.json();
     }
     const newapi = this.apiUrl + `lang/${filter}`;
-    console.log(newapi);
     const response = await fetch(newapi);
     if (!response.ok)
       throw new Error(response.status + ' ' + response.statusText);
