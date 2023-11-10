@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react';
 import { AppContext } from '../../context/context';
 import { Card } from '../cards/card';
-import { Page } from '../pages/page';
+import { Page } from '../page/page';
 import './list.scss';
 
 export function List() {
