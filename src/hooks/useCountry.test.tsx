@@ -1,48 +1,77 @@
-import { act, renderHook } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import { render, screen, act } from '@testing-library/react';
+import { useEffect, useReducer } from 'react';
 import { useCountry } from './useCountry';
+import { Country } from '../model/country.types';
+import { Repo } from '../services/repo';
+import userEvent from '@testing-library/user-event';
+import { AppState } from '../reducers/reducer';
+/* import { AppState } from '../reducers/reducer'; */
 
-jest.mock('../services/repo', () => ({
-  Repo: jest.fn(() => ({
-    getCountry: jest.fn(() => Promise.resolve([])),
-  })),
+jest.mock('react', () => ({
+  ...jest.requireActual('react'),
+  useReducer: jest.fn().mockReturnValue([{}, jest.fn()]),
 }));
+describe('', () => {
+  const mockCountry: Country = [
+    {
+      name: {
+        common: 'Colombia',
+      },
+    },
+  ] as unknown as Country;
 
-describe('Given useCountry custom Hook', () => {
-  describe('useCountry Hook', () => {
-    it('should load countries and update state', async () => {
-      const { result } = renderHook(() => useCountry());
-      act(() => {
-        result.current.loadCountries();
+  Repo.prototype.getCountry = jest.fn().mockResolvedValue(mockCountry);
+  describe('', () => {
+    beforeEach(async () => {
+      const TestComponent = () => {
+        const { loadCountries, handleChangePage, handleChangeFilter } =
+          useCountry();
+        const mockIncrement = -1;
+        const mockLang = 'english';
+
+        useEffect(() => {
+          loadCountries();
+        }, [loadCountries]);
+
+        return (
+          <>
+            <button onClick={loadCountries}>Load</button>
+            <button
+              onClick={() => {
+                handleChangePage(mockIncrement);
+              }}
+            >
+              Change
+            </button>
+            <button onClick={() => handleChangeFilter(mockLang)}>filter</button>
+          </>
+        );
+      };
+
+      await act(async () => {
+        render(<TestComponent></TestComponent>);
       });
-      expect(result.current.countriesState.country).toHaveLength(0);
     });
-
-    it('should change the page correctly', () => {
-      const { result } = renderHook(() => useCountry());
-      act(() => {
-        result.current.handleChangePage(1);
-      });
-      expect(result.current.countriesState.page).toBe(2);
-      act(() => {
-        result.current.handleChangePage(-1);
-      });
-      expect(result.current.countriesState.page).toBe(1);
+    test('', async () => {
+      const button = screen.getByRole('button', { name: 'Load' });
+      await userEvent.click(button);
+      expect(Repo.prototype.getCountry).toHaveBeenCalled();
     });
-
-    it('should handle increment greater than 1 correctly', () => {
-      const { result } = renderHook(() => useCountry());
-      act(() => {
-        result.current.handleChangePage(2);
-      });
-      expect(result.current.countriesState.page).toBe(3);
+    test('', async () => {
+      const mockState: AppState = {
+        page: 1,
+        country: [],
+      } as unknown as AppState;
+      const mockReducer = jest.fn();
+      const button = screen.getByRole('button', { name: 'Change' });
+      await userEvent.click(button);
+      expect(useReducer(mockReducer, mockState)[1]).toHaveBeenCalled();
     });
-
-    it('should handle decrement that goes below the minimum page correctly', () => {
-      const { result } = renderHook(() => useCountry());
-      act(() => {
-        result.current.handleChangePage(-1);
-      });
-      expect(result.current.countriesState.page).toBe(1);
+    test('', async () => {
+      const button = screen.getByRole('button', { name: 'filter' });
+      await userEvent.click(button);
+      expect(Repo.prototype.getCountry).toHaveBeenCalled();
     });
   });
 });

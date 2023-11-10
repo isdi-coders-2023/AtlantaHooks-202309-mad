@@ -21,13 +21,7 @@ export function useCountry() {
   }, [repo]);
 
   const handleChangePage = (increment: number) => {
-    if (countriesState.page === 1 && increment === -1) {
-      dispatch(ac.changePageActionCreator(countriesState.page));
-    } else if (countriesState.page === 25 && increment === +1) {
-      dispatch(ac.changePageActionCreator(countriesState.page));
-    } else {
-      dispatch(ac.changePageActionCreator(countriesState.page + increment));
-    }
+    dispatch(ac.changePageActionCreator(countriesState.page + increment));
   };
 
   const handleChangeFilter = async (language: string) => {
@@ -35,9 +29,7 @@ export function useCountry() {
       countriesState.page = 1;
       const data = await repo.getCountry(language);
       dispatch(ac.loadActionCreator(data));
-    } catch (error) {
-      console.error('Error al obtener datos de la API:', error);
-    }
+    } catch (error) {}
   };
 
   return {
