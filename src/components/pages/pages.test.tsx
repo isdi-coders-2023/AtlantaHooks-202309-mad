@@ -5,6 +5,7 @@ import { AppContext, ContextStructure } from '../../context/context';
 import { Page } from './page';
 
 const mockContext: ContextStructure = {
+  countriesState: { page: 2 },
   handleChangePage: jest.fn(),
 } as unknown as ContextStructure;
 describe('Given list component', () => {

@@ -19,15 +19,23 @@ export function useCountry() {
       dispatch(ac.loadActionCreator(loadedCountries));
     } catch (error) {}
   }, [repo]);
+
   const handleChangePage = (increment: number) => {
-    if (countriesState.page === 1 && increment === -1) {
-      dispatch(ac.changePageActionCreator(countriesState.page));
-    } else if (countriesState.page === 25 && increment === +1) {
-      dispatch(ac.changePageActionCreator(countriesState.page));
-    } else {
-      dispatch(ac.changePageActionCreator(countriesState.page + increment));
-    }
+    dispatch(ac.changePageActionCreator(countriesState.page + increment));
   };
 
-  return { countriesState, loadCountries, handleChangePage };
+  const handleChangeFilter = async (language: string) => {
+    try {
+      countriesState.page = 1;
+      const data = await repo.getCountry(language);
+      dispatch(ac.loadActionCreator(data));
+    } catch (error) {}
+  };
+
+  return {
+    countriesState,
+    loadCountries,
+    handleChangePage,
+    handleChangeFilter,
+  };
 }
