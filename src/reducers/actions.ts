@@ -1,10 +1,11 @@
 import { Country } from '../model/country.types';
 
 export type ActionCountryAll =
-  | 'load'
   | 'unknown'
+  | 'load'
   | 'changePage'
-  | 'privateLoad';
+  | 'privateLoad'
+  | 'changePrivatePage';
 
 type ActionCountryLoad = {
   type: 'load';
