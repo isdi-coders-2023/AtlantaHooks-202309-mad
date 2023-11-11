@@ -1,5 +1,12 @@
 header {
-  background-image: url('../../..//footer_background.png');
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 3rem;
+  padding-left: 5rem;
+  align-items: center;
+  text-align: center;
   h1 {
     font-size: 3rem;
     text-align: center;
@@ -11,5 +18,79 @@ header {
       /* Sombra superior izquierda */ 1px -1px 0 #000,
       /* Sombra superior derecha */ -1px 1px 0 #000,
       /* Sombra inferior izquierda */ 1px 1px 0 #000; /* Sombra inferior derecha */
+  }
+  p {
+    &:hover {
+      font-size: 2rem;
+    }
+    font-size: 1.5rem;
+    color: white;
+    color: #fff;
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+      0.5px 0.5px 0 #000;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  header {
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 2rem;
+    padding-left: 3rem;
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 0;
+      padding-block: 1rem;
+      color: white;
+      color: #fff; /* Color del texto */
+      text-shadow: -1px -1px 0 #000,
+        /* Sombra superior izquierda */ 1px -1px 0 #000,
+        /* Sombra superior derecha */ -1px 1px 0 #000,
+        /* Sombra inferior izquierda */ 1px 1px 0 #000; /* Sombra inferior derecha */
+    }
+    p {
+      font-size: 1.5rem;
+      color: white;
+      color: #fff;
+      text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000,
+        -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 0.4rem;
+    padding-left: 1rem;
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 0;
+      color: white;
+      color: #fff; /* Color del texto */
+
+      text-shadow: -1px -1px 0 #000,
+        /* Sombra superior izquierda */ 1px -1px 0 #000,
+        /* Sombra superior derecha */ -1px 1px 0 #000,
+        /* Sombra inferior izquierda */ 1px 1px 0 #000; /* Sombra inferior derecha */
+    }
+    p {
+      font-size: 1.5rem;
+      color: white;
+      color: #fff;
+      text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000,
+        -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+    }
   }
 }
