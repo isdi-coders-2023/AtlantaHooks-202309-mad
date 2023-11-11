@@ -1,0 +1,19 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "name": "España",
+      "language": "Español"
+    },
+    {
+      "id": 2,
+      "name": "Francia",
+      "language": "Francés"
+    },
+    {
+      "id": 3,
+      "name": "Alemania",
+      "language": "Alemán"
+    }
+  ]
+}
