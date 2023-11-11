@@ -3,6 +3,7 @@ import { AppContext } from '../../context/context';
 import { Card } from '../cards/card';
 import { Page } from '../pages/page';
 import './list.scss';
+import { Country } from '../../model/country.types';
 
 export function List() {
   const {
@@ -17,7 +18,7 @@ export function List() {
   return (
     <div>
       <ul className="country_list">
-        {country.slice((page - 1) * 8, page * 8).map((item) => (
+        {country.slice((page - 1) * 8, page * 8).map((item: Country) => (
           <Card country={item} key={item.name.common} />
         ))}
       </ul>

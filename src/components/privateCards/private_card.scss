@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  gap: 0.1rem;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 0.2rem;
+  background-color: bisque;
+  color: black;
+  text-decoration: none;
+
+  .card_header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    color: black;
+    text-decoration: none;
+    h2 {
+      font-size: 1rem;
+      align-items: center;
+      text-align: center;
+      color: black;
+      text-decoration: none;
+    }
+    img {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+  img {
+    width: 12rem;
+    margin-bottom: 1rem;
+    height: 8rem;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+    text-decoration: none;
+    .country_card_info {
+      font-weight: bold;
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
