@@ -17,12 +17,12 @@ export function List() {
 
   return (
     <div>
+      <Page />
       <ul className="country_list">
         {country.slice((page - 1) * 8, page * 8).map((item: Country) => (
           <Card country={item} key={item.name.common} />
         ))}
       </ul>
-      <Page />
     </div>
   );
 }

@@ -7,26 +7,34 @@ type PropsType = {
 };
 export function Card({ country }: PropsType) {
   /*   const handleAddToFavorites = () => {};
-  */
+   */
   return (
     <div className="card">
-      <Link to={'/details/' + country.name.common}>
-        <div className="card_header">
-          <h2>{country.name.official}</h2>
+      <Link
+        to={'/details/' + country.name.common}
+        style={{ textDecoration: 'none' }}
+      >
+        <div className="card-header">
+          <h2>{country.name.common}</h2>
           <img role="button" src="./star-icon.png" alt="Add Country Icon" />
         </div>
-        <img src={country.flags.png} alt="Country Flag" />
-        <p>
-          Capital: <span className="country_card_info"> {country.capital}</span>
-        </p>
-        <p>
-          Continente:{' '}
-          <span className="country_card_info"> {country.region} </span>
-        </p>
-        <p>
-          Population:{' '}
-          <span className="country_card_info"> {country.population} </span>
-        </p>
+        <div className="card-image">
+          <img src={country.flags.png} alt="Country Flag" />
+        </div>
+        <div className="card-info">
+          <p>
+            Capital:{' '}
+            <span className="country_card_info"> {country.capital}</span>
+          </p>
+          <p>
+            Continente:{' '}
+            <span className="country_card_info"> {country.region} </span>
+          </p>
+          <p>
+            Population:{' '}
+            <span className="country_card_info"> {country.population} </span>
+          </p>
+        </div>
       </Link>
     </div>
   );

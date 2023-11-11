@@ -1,9 +1,12 @@
-import style from './footer.module.scss';
+import './footer.module.scss';
 
 export function Footer() {
   return (
-    <footer className={style.footer}>
-      <address>Atlanta Hooks Team</address>
+    <footer>
+      <div className="address-container">
+        <address>Atlanta Hooks Team</address>
+        <img src="./img-hawks.png" alt="" />
+      </div>
     </footer>
   );
 }
