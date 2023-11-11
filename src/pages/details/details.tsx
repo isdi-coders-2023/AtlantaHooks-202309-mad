@@ -2,12 +2,13 @@ import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { AppContext } from '../../context/context';
 import './detalis.scss';
+import { Country } from '../../model/country.types';
 
 export default function DetailsPage() {
   const { name } = useParams();
   const { countriesState } = useContext(AppContext);
   const country = countriesState.country.find(
-    (item) => item.name.common === name
+    (item: Country) => item.name.common === name
   );
 
   return (

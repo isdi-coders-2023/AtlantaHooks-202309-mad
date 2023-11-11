@@ -3,6 +3,7 @@ import { Suspense, lazy } from 'react';
 
 const Home = lazy(() => import('../../pages/home/home'));
 const Details = lazy(() => import('../../pages/details/details'));
+const Favorites = lazy(() => import('../../pages/favorites/favorites'));
 const ErrorMsg = lazy(() => import('../../pages/errorpage/errorpage'));
 
 export function Router() {
@@ -13,6 +14,7 @@ export function Router() {
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/home" element={<Home></Home>}></Route>
           <Route path="/details/:name" element={<Details></Details>}></Route>
+          <Route path="/favorites" element={<Favorites></Favorites>}></Route>
           <Route path="/*" element={<ErrorMsg></ErrorMsg>}></Route>
         </Routes>
       </Suspense>
