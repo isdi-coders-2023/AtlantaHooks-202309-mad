@@ -17,6 +17,7 @@ export function PrivateList() {
 
   return (
     <div>
+      <PrivatePage />
       <ul className="country_list">
         {privateCountry
           .slice((privatePage - 1) * 8, privatePage * 8)
@@ -24,7 +25,6 @@ export function PrivateList() {
             <PrivateCard country={item} key={item.name.common} />
           ))}
       </ul>
-      <PrivatePage />
     </div>
   );
 }

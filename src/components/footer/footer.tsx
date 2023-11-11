@@ -1,11 +1,18 @@
-import './footer.module.scss';
+import './footer.scss';
 
 export function Footer() {
   return (
     <footer>
-      <div className="address-container">
-        <address>Atlanta Hooks Team</address>
-        <img src="./img-hawks.png" alt="" />
+      <div className="footer-div">
+        <div className="header-address">
+          <address>Atlanta Hooks Team</address>
+          <img src="./img-hawks.png" alt="" />
+        </div>
+        <div className="about-us">
+          <span>@Camilo83 </span>
+          <span>@SerafinMLG </span>
+          <span>@brunocoelho999 </span>
+        </div>
       </div>
     </footer>
   );
