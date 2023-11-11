@@ -18,14 +18,17 @@ describe('Given list component', () => {
       );
     });
 
-    test('Page component', async () => {
-      const nextButton = screen.getByText('Next Page');
-      await userEvent.click(nextButton);
+    test('It should call handlePrevious', async () => {
+      const element = screen.getAllByRole('button')[0];
+      expect(element).toBeInTheDocument();
+      await userEvent.click(element);
       expect(mockContext.handleChangePage).toHaveBeenCalled();
     });
-    test('Page component', async () => {
-      const prevButton = screen.getByText('Previous Page');
-      await userEvent.click(prevButton);
+
+    test('It should call handlePrevious', async () => {
+      const element = screen.getAllByRole('button')[1];
+      expect(element).toBeInTheDocument();
+      await userEvent.click(element);
       expect(mockContext.handleChangePage).toHaveBeenCalled();
     });
   });
