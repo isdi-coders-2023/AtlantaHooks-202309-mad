@@ -8,7 +8,7 @@ export function PrivatePage() {
   return (
     <>
       <div className="arrows">
-        {countriesState.page > 1 && (
+        {countriesState.privatePage > 1 && (
           <p onClick={() => handleChangePrivatePage(-1)} role="button">
             <img
               className="left-arrow"
@@ -17,7 +17,7 @@ export function PrivatePage() {
             />
           </p>
         )}
-        {countriesState.page < 25 && (
+        {countriesState.privatePage < 25 && (
           <p onClick={() => handleChangePrivatePage(+1)} role="button">
             <img
               className="right-arrow"
