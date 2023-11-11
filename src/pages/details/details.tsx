@@ -1,40 +1,45 @@
-import { useContext } from 'react';
-import { useParams } from 'react-router-dom';
-import { AppContext } from '../../context/context';
-import './detalis.scss';
-import { Country } from '../../model/country.types';
+import { Country } from '../model/country.types';
+import { ActionCountry } from './actions';
 
-export default function DetailsPage() {
-  const { name } = useParams();
-  const { countriesState } = useContext(AppContext);
-  const country = countriesState.country.find(
-    (item: Country) => item.name.common === name
-  );
+export type AppState = {
+  country: Country[];
+  page: number;
+  privateCountry: Country[];
+  privatePage: number;
+};
 
-  return (
-    <>
-      <div className="country-detail">
-        <h2>{name}</h2>
-        <img src={country?.flags.png} alt="" />
-        <h3>
-          Capital: <span className="detail-subtitle">{country?.capital}</span>
-        </h3>
-        <p>
-          Superficie:{' '}
-          <span className="detail-subtitle">{country?.area} KM2</span>
-        </p>
-        <p>
-          Población:{' '}
-          <span className="detail-subtitle">{country?.population}</span>
-        </p>
-        <p>
-          Continente: <span className="detail-subtitle">{country?.region}</span>
-        </p>
-        <p>
-          Subregión:{' '}
-          <span className="detail-subtitle">{country?.subregion}</span>
-        </p>
-      </div>
-    </>
-  );
+export function countryReducer(
+  state: AppState,
+  { type, payload }: ActionCountry
+): AppState {
+  switch (type) {
+    case 'create':
+      return { ...state, privateCountry: payload };
+    case 'delete':
+      return {
+        ...state,
+        ...state.privateCountry.filter(
+          (item: Country) => item.name.common !== payload.name.common
+        ),
+      };
+
+    case 'update':
+      return {
+        ...state,
+        ...state.privateCountry.map((item: Country) =>
+          item.name.common === payload.name.common ? payload : item
+        ),
+      };
+
+    case 'load':
+      return { ...state, country: payload };
+    case 'changePage':
+      return { ...state, page: payload };
+    case 'privateLoad':
+      return { ...state, privateCountry: payload };
+    case 'changePrivatePage':
+      return { ...state, privatePage: payload };
+    default:
+      return { ...state };
+  }
 }

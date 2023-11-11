@@ -1,17 +1,14 @@
-import { useContext } from 'react';
-import { AppContext } from '../../context/context';
-
-export function Page() {
-  const { handleChangePage, countriesState } = useContext(AppContext);
-
-  return (
-    <>
-      {countriesState.page < 25 && (
-        <button onClick={() => handleChangePage(+1)}>Next Page</button>
-      )}
-      {countriesState.page > 1 && (
-        <button onClick={() => handleChangePage(-1)}>Previous Page</button>
-      )}
-    </>
-  );
+.arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .left-arrow {
+    width: 8rem;
+    transform: rotate(225deg);
+    background-color: transparent;
+  }
+  .right-arrow {
+    width: 8rem;
+    transform: rotate(45deg);
+  }
 }

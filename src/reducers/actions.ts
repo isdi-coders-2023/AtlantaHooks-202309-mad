@@ -5,7 +5,25 @@ export type ActionCountryAll =
   | 'load'
   | 'changePage'
   | 'privateLoad'
-  | 'changePrivatePage';
+  | 'changePrivatePage'
+  | 'update'
+  | 'delete'
+  | 'create';
+
+type ActionCountryDelete = {
+  type: 'delete';
+  payload: Country;
+};
+
+type ActionCountryUpdate = {
+  type: 'update';
+  payload: Country;
+};
+
+type ActionCountryCreate = {
+  type: 'create';
+  payload: Country;
+};
 
 type ActionCountryLoad = {
   type: 'load';
@@ -28,7 +46,25 @@ export type ActionCountry =
   | ActionCountryLoad
   | ActionChangePage
   | ActionPrivateCountryLoad
-  | ActionChangePrivatePage;
+  | ActionChangePrivatePage
+  | ActionCountryDelete
+  | ActionCountryCreate
+  | ActionCountryUpdate;
+
+export const deleteActionCreator = (payload: Country): ActionCountry => ({
+  type: 'delete',
+  payload,
+});
+
+export const createActionCreator = (payload: Country): ActionCountry => ({
+  type: 'create',
+  payload,
+});
+
+export const updateActionCreator = (payload: Country): ActionCountry => ({
+  type: 'update',
+  payload,
+});
 
 export const loadActionCreator = (payload: Country[]): ActionCountry => ({
   type: 'load',
