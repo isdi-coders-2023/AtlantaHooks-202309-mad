@@ -1,15 +1,22 @@
-import { render } from '@testing-library/react';
-import { Header } from './header';
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
 
-describe('Given Header component', () => {
-  describe('When we instantiate', () => {
-    test('Renderiza el componente Header con un elemento h1', () => {
-      const { container } = render(<Header />);
+import { Header } from './header';
 
-      const h1Element = container.querySelector('h1');
+describe('Header Component', () => {
+  test('renders header with "My Favorites" link', () => {
+    render(
+      <MemoryRouter>
+        <Header />
+      </MemoryRouter>
+    );
 
-      expect(h1Element).toBeInTheDocument();
-    });
+    const headerElement = screen.getByRole('heading', { name: /countries/i });
+    const linkElement = screen.getByRole('link', { name: /my favorites/i });
+
+    expect(headerElement).toBeInTheDocument();
+    expect(linkElement).toBeInTheDocument();
+    expect(linkElement).toHaveAttribute('href', '/favorites');
   });
 });

@@ -13,6 +13,7 @@
     "test:prod": "jest --watchAll --watchAll=false --coverage --passWithNoTests",
     "prepare": "husky install",
     "sass": "sass sass:css -w",
+    "api": "json-server --watch ./api/db.json",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "keywords": [],
