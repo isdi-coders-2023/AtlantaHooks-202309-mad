@@ -7,7 +7,7 @@ type PropsType = {
 };
 export function Card({ country }: PropsType) {
   /*   const handleAddToFavorites = () => {};
-   */
+  */
   return (
     <div className="card">
       <Link
