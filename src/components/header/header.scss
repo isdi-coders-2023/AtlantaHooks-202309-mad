@@ -6,6 +6,10 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-image: URL('../public/3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   h1 {
     font-size: 3rem;
