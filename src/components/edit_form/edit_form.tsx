@@ -2,7 +2,6 @@ import { SyntheticEvent, useContext, useRef } from 'react';
 import { AppContext } from '../../context/context';
 import { Country } from '../../model/country.types';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import './edit.form.scss';
 
 export function EditCountry() {
   const formRef = useRef<HTMLFormElement>(null);
