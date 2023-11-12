@@ -8,9 +8,12 @@ type PropsType = {
   country: Country;
 };
 export function Card({ country }: PropsType) {
-  const { addCountry } = useContext(AppContext);
+  const { addCountry, countriesState } = useContext(AppContext);
   const handleAddToFavorites = () => {
-    addCountry(country);
+    console.log(countriesState.privateCountry);
+    if (!countriesState.privateCountry.includes(country)) {
+      addCountry(country);
+    }
   };
 
   return (

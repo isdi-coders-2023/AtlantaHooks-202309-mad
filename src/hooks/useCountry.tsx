@@ -39,6 +39,7 @@ export function useCountry() {
     try {
       // Asíncrona
       const loadedPrivateCountries = await privaterepo.getCountry();
+      countriesState.privateCountry = loadedPrivateCountries;
       // Síncrono
       dispatch(ac.loadPrivateActionCreator(loadedPrivateCountries));
     } catch (error) {}
