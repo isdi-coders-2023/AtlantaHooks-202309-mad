@@ -1,6 +1,7 @@
 import { SyntheticEvent, useContext, useRef } from 'react';
 import { AppContext } from '../../context/context';
 import { Country } from '../../model/country.types';
+import './country_form.scss';
 
 export function AddNewCountry() {
   // tenias el mismo nombre de la función

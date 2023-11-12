@@ -16,22 +16,27 @@ export function PrivateCard({ country }: PropsType) {
 
   return (
     <div className="card">
-      <Link to={'/edit/' + country.id}>
-        <img role="button" src="./Pen.png" alt="Edit Country Icon" />
-      </Link>
-      <img
-        role="button"
-        src="./x.png"
-        alt="Delete Country Icon"
-        onClick={handleDeleteCountry}
-      />
+      <div className="private-card-header">
+        <div className="card-header">
+          <h2>{country.name.common}</h2>
+        </div>
+        <div className="card-header-images">
+          <Link to={'/edit/' + country.id}>
+            <img role="button" src="./Pen.png" alt="Edit Country Icon" />
+          </Link>
+
+          <img
+            role="button"
+            src="./x.png"
+            alt="Delete Country Icon"
+            onClick={handleDeleteCountry}
+          />
+        </div>
+      </div>
       <Link
         to={'/favorites_details/' + country.id}
         style={{ textDecoration: 'none' }}
       >
-        <div className="card-header">
-          <h2>{country.name.common}</h2>
-        </div>
         <div className="card-image">
           <img src={country.flags.png} alt="Country Flag" />
         </div>

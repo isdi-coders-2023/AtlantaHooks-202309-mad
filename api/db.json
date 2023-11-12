@@ -2,31 +2,6 @@
   "favorites": [
     {
       "name": {
-        "common": "d",
-        "official": "d",
-        "nativeName": {
-          "eng": {
-            "official": "d",
-            "common": "d"
-          }
-        }
-      },
-      "capital": [
-        "g"
-      ],
-      "area": 3,
-      "population": 4,
-      "region": "g",
-      "subregion": "a",
-      "flags": {
-        "png": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAC0CAMAAAB4+cOfAAAAeFBMVEX///8AjAIBigWnp6cHdhEJawgAfgHc//AAjwABiwD4+Pi4uLjNzc0AgQAJigWGqo55eXmioqKwsLC/v7+lwLnh//Pb/+zV/OO/z8sAXRMAfBcAfAoAeBoAeAB/qIoEagCFqoGIqZAQiRAGTQYMaAqHo44AcACDsYz1hgj3AAACHklEQVR4nO3c21ITQRRA0ZlRYEZNvOMdJEb8/z80Ucoiwn5OHtaq6veu3ee89vDqCQ+9fjO8HXjo2Yvh+bHvcJKECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTNiFeff+gkOXF5cfPg6fPq/Ov5xz39cv366G62WcRw6sltX3YbsZp83EPfNmOr8azjbzuOwqLYtzd+ZpXL3cT8yyPvYbnZZ5mXerdLaex+nYS31iNtNuYs7W47RIc2A9CvMoYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIw4S7MPC3HvslpmdfzPsxmXszLgXmaV1d+gH5ot0rnN39+gN5PzAn8vHwqZz8xN8P1NPOf8e8qTftVWvPPtBl3YX5sb884tL3d/hye8ojbX78BChbBiPKGpdkAAAAASUVORK5CYII=",
-        "svg": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAC0CAMAAAB4+cOfAAAAeFBMVEX///8AjAIBigWnp6cHdhEJawgAfgHc//AAjwABiwD4+Pi4uLjNzc0AgQAJigWGqo55eXmioqKwsLC/v7+lwLnh//Pb/+zV/OO/z8sAXRMAfBcAfAoAeBoAeAB/qIoEagCFqoGIqZAQiRAGTQYMaAqHo44AcACDsYz1hgj3AAACHklEQVR4nO3c21ITQRRA0ZlRYEZNvOMdJEb8/z80Ucoiwn5OHtaq6veu3ee89vDqCQ+9fjO8HXjo2Yvh+bHvcJKECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTNiFeff+gkOXF5cfPg6fPq/Ov5xz39cv366G62WcRw6sltX3YbsZp83EPfNmOr8azjbzuOwqLYtzd+ZpXL3cT8yyPvYbnZZ5mXerdLaex+nYS31iNtNuYs7W47RIc2A9CvMoYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIw4S7MPC3HvslpmdfzPsxmXszLgXmaV1d+gH5ot0rnN39+gN5PzAn8vHwqZz8xN8P1NPOf8e8qTftVWvPPtBl3YX5sb884tL3d/hye8ojbX78BChbBiPKGpdkAAAAASUVORK5CYII=",
-        "alt": "Bandera de d"
-      },
-      "id": 2
-    },
-    {
-      "name": {
         "common": "Taiwan",
         "official": "Republic of China (Taiwan)",
         "nativeName": {
@@ -653,6 +628,467 @@
         "regex": "^(\\d{5})$"
       },
       "id": 7
+    },
+    {
+      "name": {
+        "common": "Peru",
+        "official": "Republic of Peru",
+        "nativeName": {
+          "aym": {
+            "official": "Piruw Suyu",
+            "common": "Piruw"
+          },
+          "que": {
+            "official": "Piruw Ripuwlika",
+            "common": "Piruw"
+          },
+          "spa": {
+            "official": "República del Perú",
+            "common": "Perú"
+          }
+        }
+      },
+      "tld": [
+        ".pe"
+      ],
+      "cca2": "PE",
+      "ccn3": "604",
+      "cca3": "PER",
+      "cioc": "PER",
+      "independent": true,
+      "status": "officially-assigned",
+      "unMember": true,
+      "currencies": {
+        "PEN": {
+          "name": "Peruvian sol",
+          "symbol": "S/ "
+        }
+      },
+      "idd": {
+        "root": "+5",
+        "suffixes": [
+          "1"
+        ]
+      },
+      "capital": [
+        "Lima"
+      ],
+      "altSpellings": [
+        "PE",
+        "Republic of Peru",
+        "República del Perú"
+      ],
+      "region": "Americas",
+      "subregion": "South America",
+      "languages": {
+        "aym": "Aymara",
+        "que": "Quechua",
+        "spa": "Spanish"
+      },
+      "translations": {
+        "ara": {
+          "official": "جمهورية بيرو",
+          "common": "بيرو"
+        },
+        "bre": {
+          "official": "Republik Perou",
+          "common": "Perou"
+        },
+        "ces": {
+          "official": "Peruánská republika",
+          "common": "Peru"
+        },
+        "cym": {
+          "official": "Republic of Peru",
+          "common": "Peru"
+        },
+        "deu": {
+          "official": "Republik Peru",
+          "common": "Peru"
+        },
+        "est": {
+          "official": "Peruu Vabariik",
+          "common": "Peruu"
+        },
+        "fin": {
+          "official": "Perun tasavalta",
+          "common": "Peru"
+        },
+        "fra": {
+          "official": "République du Pérou",
+          "common": "Pérou"
+        },
+        "hrv": {
+          "official": "Republika Peru",
+          "common": "Peru"
+        },
+        "hun": {
+          "official": "Perui Köztársaság",
+          "common": "Peru"
+        },
+        "ita": {
+          "official": "Repubblica del Perù",
+          "common": "Perù"
+        },
+        "jpn": {
+          "official": "ペルー共和国",
+          "common": "ペルー"
+        },
+        "kor": {
+          "official": "페루 공화국",
+          "common": "페루"
+        },
+        "nld": {
+          "official": "Republiek Peru",
+          "common": "Peru"
+        },
+        "per": {
+          "official": "جمهوری پرو",
+          "common": "پرو"
+        },
+        "pol": {
+          "official": "Republika Peru",
+          "common": "Peru"
+        },
+        "por": {
+          "official": "República do Peru",
+          "common": "Perú"
+        },
+        "rus": {
+          "official": "Республика Перу",
+          "common": "Перу"
+        },
+        "slk": {
+          "official": "Peruánska republika",
+          "common": "Peru"
+        },
+        "spa": {
+          "official": "República de Perú",
+          "common": "Perú"
+        },
+        "srp": {
+          "official": "Република Перу",
+          "common": "Перу"
+        },
+        "swe": {
+          "official": "Republiken Peru",
+          "common": "Peru"
+        },
+        "tur": {
+          "official": "Peru Cumhuriyeti",
+          "common": "Peru"
+        },
+        "urd": {
+          "official": "جمہوریہ پیرو",
+          "common": "پیرو"
+        },
+        "zho": {
+          "official": "秘鲁共和国",
+          "common": "秘鲁"
+        }
+      },
+      "latlng": [
+        -10,
+        -76
+      ],
+      "landlocked": false,
+      "borders": [
+        "BOL",
+        "BRA",
+        "CHL",
+        "COL",
+        "ECU"
+      ],
+      "area": 1285216,
+      "demonyms": {
+        "eng": {
+          "f": "Peruvian",
+          "m": "Peruvian"
+        },
+        "fra": {
+          "f": "Péruvienne",
+          "m": "Péruvien"
+        }
+      },
+      "flag": "🇵🇪",
+      "maps": {
+        "googleMaps": "https://goo.gl/maps/uDWEUaXNcZTng1fP6",
+        "openStreetMaps": "https://www.openstreetmap.org/relation/288247"
+      },
+      "population": 32971846,
+      "gini": {
+        "2019": 41.5
+      },
+      "fifa": "PER",
+      "car": {
+        "signs": [
+          "PE"
+        ],
+        "side": "right"
+      },
+      "timezones": [
+        "UTC-05:00"
+      ],
+      "continents": [
+        "South America"
+      ],
+      "flags": {
+        "png": "https://flagcdn.com/w320/pe.png",
+        "svg": "https://flagcdn.com/pe.svg",
+        "alt": "The flag of Peru is composed of three equal vertical bands of red, white and red, with the national emblem centered in the white band."
+      },
+      "coatOfArms": {
+        "png": "https://mainfacts.com/media/images/coats_of_arms/pe.png",
+        "svg": "https://mainfacts.com/media/images/coats_of_arms/pe.svg"
+      },
+      "startOfWeek": "monday",
+      "capitalInfo": {
+        "latlng": [
+          -12.05,
+          -77.05
+        ]
+      },
+      "postalCode": {
+        "format": "#####",
+        "regex": "^(\\d{5})$"
+      },
+      "id": 8
+    },
+    {
+      "name": {
+        "common": "Monaguillolandia",
+        "official": "Monaguillolandia",
+        "nativeName": {
+          "eng": {
+            "official": "Monaguillolandia",
+            "common": "Monaguillolandia"
+          }
+        }
+      },
+      "capital": [
+        "Bruno State"
+      ],
+      "area": 43,
+      "population": 43,
+      "region": "Europa",
+      "subregion": "Europa del Este",
+      "flags": {
+        "png": "https://media.istockphoto.com/id/1309116236/es/vector/bandera-muy-detallada-de-la-santa-sede-de-la-ciudad-del-vaticano-bandera-de-la-santa-sede-de.jpg?s=612x612&w=0&k=20&c=vNPJRHX8-XEohn1WXl8uPXCmuO0vLXe6_o7hRHpWuVQ=",
+        "svg": "https://media.istockphoto.com/id/1309116236/es/vector/bandera-muy-detallada-de-la-santa-sede-de-la-ciudad-del-vaticano-bandera-de-la-santa-sede-de.jpg?s=612x612&w=0&k=20&c=vNPJRHX8-XEohn1WXl8uPXCmuO0vLXe6_o7hRHpWuVQ=",
+        "alt": "Bandera de Monaguillolandia"
+      },
+      "id": 9
+    },
+    {
+      "name": {
+        "common": "Bhutan",
+        "official": "Kingdom of Bhutan",
+        "nativeName": {
+          "dzo": {
+            "official": "འབྲུག་རྒྱལ་ཁབ་",
+            "common": "འབྲུག་ཡུལ་"
+          }
+        }
+      },
+      "tld": [
+        ".bt"
+      ],
+      "cca2": "BT",
+      "ccn3": "064",
+      "cca3": "BTN",
+      "cioc": "BHU",
+      "independent": true,
+      "status": "officially-assigned",
+      "unMember": true,
+      "currencies": {
+        "BTN": {
+          "name": "Bhutanese ngultrum",
+          "symbol": "Nu."
+        },
+        "INR": {
+          "name": "Indian rupee",
+          "symbol": "₹"
+        }
+      },
+      "idd": {
+        "root": "+9",
+        "suffixes": [
+          "75"
+        ]
+      },
+      "capital": [
+        "Thimphu"
+      ],
+      "altSpellings": [
+        "BT",
+        "Kingdom of Bhutan"
+      ],
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "languages": {
+        "dzo": "Dzongkha"
+      },
+      "translations": {
+        "ara": {
+          "official": "مملكة بوتان",
+          "common": "بوتان"
+        },
+        "bre": {
+          "official": "Rouantelezh Bhoutan",
+          "common": "Bhoutan"
+        },
+        "ces": {
+          "official": "Bhútánské království",
+          "common": "Bhútán"
+        },
+        "cym": {
+          "official": "Teyrnas Bhwtan",
+          "common": "Bhwtan"
+        },
+        "deu": {
+          "official": "Königreich Bhutan",
+          "common": "Bhutan"
+        },
+        "est": {
+          "official": "Bhutani Kuningriik",
+          "common": "Bhutan"
+        },
+        "fin": {
+          "official": "Bhutanin kuningaskunta",
+          "common": "Bhutan"
+        },
+        "fra": {
+          "official": "Royaume du Bhoutan",
+          "common": "Bhoutan"
+        },
+        "hrv": {
+          "official": "Kraljevina Butan",
+          "common": "Butan"
+        },
+        "hun": {
+          "official": "Bhutáni Királyság",
+          "common": "Bhután"
+        },
+        "ita": {
+          "official": "Regno del Bhutan",
+          "common": "Bhutan"
+        },
+        "jpn": {
+          "official": "ブータン王国",
+          "common": "ブータン"
+        },
+        "kor": {
+          "official": "부탄 왕국",
+          "common": "부탄"
+        },
+        "nld": {
+          "official": "Koninkrijk Bhutan",
+          "common": "Bhutan"
+        },
+        "per": {
+          "official": "پادشاهی بوتان",
+          "common": "بوتان"
+        },
+        "pol": {
+          "official": "Bhutan",
+          "common": "Bhutan"
+        },
+        "por": {
+          "official": "Reino do Butão",
+          "common": "Butão"
+        },
+        "rus": {
+          "official": "Королевство Бутан",
+          "common": "Бутан"
+        },
+        "slk": {
+          "official": "Bhutánske krâľovstvo",
+          "common": "Bhután"
+        },
+        "spa": {
+          "official": "Reino de Bután",
+          "common": "Bután"
+        },
+        "srp": {
+          "official": "Краљевина Бутан",
+          "common": "Бутан"
+        },
+        "swe": {
+          "official": "Konungariket Bhutan",
+          "common": "Bhutan"
+        },
+        "tur": {
+          "official": "Butan Krallığı",
+          "common": "Butan"
+        },
+        "urd": {
+          "official": "سلطنت بھوٹان",
+          "common": "بھوٹان"
+        },
+        "zho": {
+          "official": "不丹王国",
+          "common": "不丹"
+        }
+      },
+      "latlng": [
+        27.5,
+        90.5
+      ],
+      "landlocked": true,
+      "borders": [
+        "CHN",
+        "IND"
+      ],
+      "area": 38394,
+      "demonyms": {
+        "eng": {
+          "f": "Bhutanese",
+          "m": "Bhutanese"
+        },
+        "fra": {
+          "f": "Bhoutanaise",
+          "m": "Bhoutanais"
+        }
+      },
+      "flag": "🇧🇹",
+      "maps": {
+        "googleMaps": "https://goo.gl/maps/VEfXXBftTFLUpNgp8",
+        "openStreetMaps": "https://www.openstreetmap.org/relation/184629"
+      },
+      "population": 771612,
+      "gini": {
+        "2017": 37.4
+      },
+      "fifa": "BHU",
+      "car": {
+        "signs": [
+          "BHT"
+        ],
+        "side": "left"
+      },
+      "timezones": [
+        "UTC+06:00"
+      ],
+      "continents": [
+        "Asia"
+      ],
+      "flags": {
+        "png": "https://flagcdn.com/w320/bt.png",
+        "svg": "https://flagcdn.com/bt.svg",
+        "alt": "The flag of Bhutan is divided diagonally, from the lower hoist-side corner to the upper fly-side corner, into an upper yellow and a lower orange triangle. A fly-side facing white dragon holding four jewels in its claws is situated along the boundary of the two triangles."
+      },
+      "coatOfArms": {
+        "png": "https://mainfacts.com/media/images/coats_of_arms/bt.png",
+        "svg": "https://mainfacts.com/media/images/coats_of_arms/bt.svg"
+      },
+      "startOfWeek": "monday",
+      "capitalInfo": {
+        "latlng": [
+          27.47,
+          89.63
+        ]
+      },
+      "id": 10
     }
   ]
 }

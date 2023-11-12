@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { AppContext } from '../../context/context';
-import '../details/detalis.scss';
+import '../fav_details/fav_details.scss';
 import { Country } from '../../model/country.types';
 
 export default function PrivateDetailsPage() {
