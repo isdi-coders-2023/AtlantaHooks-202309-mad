@@ -51,14 +51,6 @@ export function useCountry() {
     );
   };
 
-  const handleChangePrivateFilter = async (language: string) => {
-    try {
-      countriesState.privatePage = 1;
-      const data = await privaterepo.getCountry(language);
-      dispatch(ac.loadPrivateActionCreator(data));
-    } catch (error) {}
-  };
-
   const addCountry = async (country: Partial<Country>) => {
     //cambié el nombre de la variable
     try {
@@ -101,7 +93,6 @@ export function useCountry() {
     handleChangeFilter,
     loadPrivateCountries,
     handleChangePrivatePage,
-    handleChangePrivateFilter,
     addCountry,
     updateCountry,
     deleteCountry,

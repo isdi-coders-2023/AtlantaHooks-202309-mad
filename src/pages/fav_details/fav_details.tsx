@@ -4,7 +4,7 @@ import { AppContext } from '../../context/context';
 import '../details/detalis.scss';
 import { Country } from '../../model/country.types';
 
-export default function DetailsPage() {
+export default function PrivateDetailsPage() {
   const { id } = useParams();
   const { countriesState, loadPrivateCountries } = useContext(AppContext);
   console.log(countriesState.privateCountry);

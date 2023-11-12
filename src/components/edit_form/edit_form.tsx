@@ -4,7 +4,6 @@ import { Country } from '../../model/country.types';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 
 export function EditCountry() {
-  // tenias el mismo nombre de la función
   const formRef = useRef<HTMLFormElement>(null);
   const { updateCountry } = useContext(AppContext);
   const navigate = useNavigate();
@@ -102,7 +101,7 @@ export function EditCountry() {
             </div>
 
             <div>
-              <button type="submit">Añadir</button>
+              <button type="submit">Editar</button>
               <button onClick={handleCancelCreateCountry}>Cancelar</button>
             </div>
           </form>

@@ -92,4 +92,59 @@ describe('countryReducer', () => {
       privatePage: action.payload,
     });
   });
+
+  test('should handle create action', () => {
+    const initialState: AppState = {
+      country: [],
+      page: 1,
+      privateCountry: [],
+      privatePage: 1,
+    };
+
+    const countryToCreate: Country = {
+      name: { common: 'NewCountry' },
+    } as Country;
+
+    const action: ActionCountry = {
+      type: 'create',
+      payload: countryToCreate,
+    };
+
+    const newState = countryReducer(initialState, action);
+
+    expect(newState).toEqual({
+      ...initialState,
+      privateCountry: [...initialState.privateCountry, countryToCreate],
+    });
+  });
+
+  test('should handle update action', () => {
+    const existingCountry: Country = {
+      name: { common: 'ExistingCountry' },
+    } as Country;
+
+    const initialState: AppState = {
+      country: [],
+      page: 1,
+      privateCountry: [existingCountry],
+      privatePage: 1,
+    };
+
+    const updatedCountry: Country = {
+      ...existingCountry,
+      name: { common: 'UpdatedCountry' },
+    } as unknown as Country;
+
+    const action: ActionCountry = {
+      type: 'update',
+      payload: updatedCountry,
+    };
+
+    const newState = countryReducer(initialState, action);
+
+    expect(newState).toEqual({
+      ...initialState,
+      privateCountry: [updatedCountry],
+    });
+  });
 });
