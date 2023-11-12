@@ -10,18 +10,13 @@ export function Header() {
 
   const handleClick = () => {
     // Cambia la ruta y el texto del párrafo en función de la página actual
-    if (isFavoritesPage) {
-      navigate('/');
-    } else {
-      navigate('/favorites');
-    }
+    navigate(isFavoritesPage ? '/' : '/favorites');
   };
 
   return (
     <header>
       <h1>COUNTRIES</h1>
 
-      {/* Utiliza el operador ternario para cambiar el contenido del <p> y la ruta del enlace */}
       <Link
         to={isFavoritesPage ? '/' : '/favorites'}
         style={{ textDecoration: 'none' }}
