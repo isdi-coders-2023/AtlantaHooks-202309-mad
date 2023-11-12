@@ -11,7 +11,11 @@ export function Card({ country }: PropsType) {
   const { addCountry, countriesState } = useContext(AppContext);
   const handleAddToFavorites = () => {
     console.log(countriesState.privateCountry);
-    if (!countriesState.privateCountry.includes(country)) {
+    if (
+      !countriesState.privateCountry.some(
+        (c) => c.name.common === country.name.common
+      )
+    ) {
       addCountry(country);
     }
   };

@@ -1,12 +1,14 @@
-import { SyntheticEvent, useContext, useRef } from 'react';
+import { SyntheticEvent, useContext } from 'react';
 import { AppContext } from '../../context/context';
 import { Country } from '../../model/country.types';
+import { useNavigate, useParams } from 'react-router-dom';
 
-export function AddNewCountry() {
+export function EditCountry() {
   // tenias el mismo nombre de la función
-  const { addCountry } = useContext(AppContext);
+  const { updateCountry } = useContext(AppContext);
+  const navigate = useNavigate();
+  const { id } = useParams();
 
-  const formRef = useRef<HTMLFormElement>(null);
   const handleSubmit = (event: SyntheticEvent) => {
     const form = event.target as HTMLFormElement;
     event.preventDefault();
@@ -43,22 +45,19 @@ export function AddNewCountry() {
       },
     };
 
-    addCountry(newCountry);
+    updateCountry(id as string, newCountry);
     form.reset();
-  };
-
-  const handleCancelCreateCountry = () => {
-    formRef.current?.reset();
+    navigate('/favorites');
   };
 
   return (
     <section className="add-country">
       <div>
-        <h2>Create country</h2>
+        <h2>Edit country</h2>
       </div>
 
       <div className="country-form">
-        <form ref={formRef} action="" name="form" onSubmit={handleSubmit}>
+        <form action="" name="form" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="country-name">Nombre</label>
             <input type="text" name="name" required />
@@ -95,7 +94,7 @@ export function AddNewCountry() {
 
           <div>
             <button type="submit">Añadir</button>
-            <button onClick={handleCancelCreateCountry}>Cancelar</button>
+            <button>Cancelar</button>
           </div>
         </form>
       </div>

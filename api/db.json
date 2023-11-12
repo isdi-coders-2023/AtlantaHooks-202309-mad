@@ -27,242 +27,445 @@
     },
     {
       "name": {
-        "common": "re",
-        "official": "re",
+        "common": "fdfdfd",
+        "official": "fdfdfd",
         "nativeName": {
           "eng": {
-            "official": "re",
-            "common": "re"
+            "official": "fdfdfd",
+            "common": "fdfdfd"
           }
         }
       },
       "capital": [
-        "re"
+        "jjbjvs"
       ],
-      "area": 4,
-      "population": 6,
-      "region": "gfd",
-      "subregion": "fd",
+      "area": 8,
+      "population": 8,
+      "region": "bjsc",
+      "subregion": "snskc",
       "flags": {
         "png": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAC0CAMAAAB4+cOfAAAAeFBMVEX///8AjAIBigWnp6cHdhEJawgAfgHc//AAjwABiwD4+Pi4uLjNzc0AgQAJigWGqo55eXmioqKwsLC/v7+lwLnh//Pb/+zV/OO/z8sAXRMAfBcAfAoAeBoAeAB/qIoEagCFqoGIqZAQiRAGTQYMaAqHo44AcACDsYz1hgj3AAACHklEQVR4nO3c21ITQRRA0ZlRYEZNvOMdJEb8/z80Ucoiwn5OHtaq6veu3ee89vDqCQ+9fjO8HXjo2Yvh+bHvcJKECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTNiFeff+gkOXF5cfPg6fPq/Ov5xz39cv366G62WcRw6sltX3YbsZp83EPfNmOr8azjbzuOwqLYtzd+ZpXL3cT8yyPvYbnZZ5mXerdLaex+nYS31iNtNuYs7W47RIc2A9CvMoYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIw4S7MPC3HvslpmdfzPsxmXszLgXmaV1d+gH5ot0rnN39+gN5PzAn8vHwqZz8xN8P1NPOf8e8qTftVWvPPtBl3YX5sb884tL3d/hye8ojbX78BChbBiPKGpdkAAAAASUVORK5CYII=",
         "svg": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAC0CAMAAAB4+cOfAAAAeFBMVEX///8AjAIBigWnp6cHdhEJawgAfgHc//AAjwABiwD4+Pi4uLjNzc0AgQAJigWGqo55eXmioqKwsLC/v7+lwLnh//Pb/+zV/OO/z8sAXRMAfBcAfAoAeBoAeAB/qIoEagCFqoGIqZAQiRAGTQYMaAqHo44AcACDsYz1hgj3AAACHklEQVR4nO3c21ITQRRA0ZlRYEZNvOMdJEb8/z80Ucoiwn5OHtaq6veu3ee89vDqCQ+9fjO8HXjo2Yvh+bHvcJKECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTNiFeff+gkOXF5cfPg6fPq/Ov5xz39cv366G62WcRw6sltX3YbsZp83EPfNmOr8azjbzuOwqLYtzd+ZpXL3cT8yyPvYbnZZ5mXerdLaex+nYS31iNtNuYs7W47RIc2A9CvMoYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIwQZggTBAmCBOECcIEYYIw4S7MPC3HvslpmdfzPsxmXszLgXmaV1d+gH5ot0rnN39+gN5PzAn8vHwqZz8xN8P1NPOf8e8qTftVWvPPtBl3YX5sb884tL3d/hye8ojbX78BChbBiPKGpdkAAAAASUVORK5CYII=",
-        "alt": "Bandera de re"
+        "alt": "Bandera de fdfdfd"
       },
       "id": 4
     },
     {
       "name": {
-        "common": "Western Sahara",
-        "official": "Sahrawi Arab Democratic Republic",
+        "common": "Taiwan",
+        "official": "Republic of China (Taiwan)",
         "nativeName": {
-          "ber": {
-            "official": "Sahrawi Arab Democratic Republic",
-            "common": "Western Sahara"
-          },
-          "mey": {
-            "official": "الجمهورية العربية الصحراوية الديمقراطية",
-            "common": "الصحراء الغربية"
-          },
-          "spa": {
-            "official": "República Árabe Saharaui Democrática",
-            "common": "Sahara Occidental"
+          "zho": {
+            "official": "中華民國",
+            "common": "台灣"
           }
         }
       },
       "tld": [
-        ".eh"
+        ".tw",
+        ".台灣",
+        ".台湾"
       ],
-      "cca2": "EH",
-      "ccn3": "732",
-      "cca3": "ESH",
+      "cca2": "TW",
+      "ccn3": "158",
+      "cca3": "TWN",
+      "cioc": "TPE",
       "independent": false,
       "status": "officially-assigned",
       "unMember": false,
       "currencies": {
-        "DZD": {
-          "name": "Algerian dinar",
-          "symbol": "دج"
-        },
-        "MAD": {
-          "name": "Moroccan dirham",
-          "symbol": "DH"
-        },
-        "MRU": {
-          "name": "Mauritanian ouguiya",
-          "symbol": "UM"
+        "TWD": {
+          "name": "New Taiwan dollar",
+          "symbol": "$"
         }
       },
       "idd": {
-        "root": "+2",
+        "root": "+8",
         "suffixes": [
-          "125288",
-          "125289"
+          "86"
         ]
       },
       "capital": [
-        "El Aaiún"
+        "Taipei"
       ],
       "altSpellings": [
-        "EH",
-        "Taneẓroft Tutrimt"
+        "TW",
+        "Táiwān",
+        "Republic of China",
+        "中華民國",
+        "Zhōnghuá Mínguó",
+        "Chinese Taipei"
       ],
-      "region": "Africa",
-      "subregion": "Northern Africa",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
       "languages": {
-        "ber": "Berber",
-        "mey": "Hassaniya",
-        "spa": "Spanish"
+        "zho": "Chinese"
       },
       "translations": {
         "ara": {
-          "official": "الجمهورية العربية الصحراوية الديمقراطية",
-          "common": "الصحراء الغربية"
+          "official": "جمهورية الصين (تايوان)",
+          "common": "تايوان"
         },
         "bre": {
-          "official": "Republik Arab Saharaoui Demokratel",
-          "common": "Sahara ar C'hornôg"
+          "official": "Republik Sina (Taiwan)",
+          "common": "Taiwan"
         },
         "ces": {
-          "official": "Západní Sahara",
-          "common": "Západní Sahara"
+          "official": "Čínská republika",
+          "common": "Tchaj-wan"
         },
         "cym": {
-          "official": "Sahrawi Arab Democratic Republic",
-          "common": "Western Sahara"
+          "official": "Republic of China (Taiwan)",
+          "common": "Taiwan"
         },
         "deu": {
-          "official": "Demokratische Arabische Republik Sahara",
-          "common": "Westsahara"
+          "official": "Republik China (Taiwan)",
+          "common": "Taiwan"
         },
         "est": {
-          "official": "Lääne-Sahara",
-          "common": "Lääne-Sahara"
+          "official": "Taiwani",
+          "common": "Taiwan"
         },
         "fin": {
-          "official": "Länsi-Sahara",
-          "common": "Länsi-Sahara"
+          "official": "Kiinan tasavalta",
+          "common": "Taiwan"
         },
         "fra": {
-          "official": "République arabe sahraouie démocratique",
-          "common": "Sahara Occidental"
+          "official": "République de Chine (Taïwan)",
+          "common": "Taïwan"
         },
         "hrv": {
-          "official": "Sahrawi Arab Demokratska Republika",
-          "common": "Zapadna Sahara"
+          "official": "Republika Kina",
+          "common": "Tajvan"
         },
         "hun": {
-          "official": "Nyugat-Szahara",
-          "common": "Nyugat-Szahara"
+          "official": "Kínai Köztársaság",
+          "common": "Tajvan"
         },
         "ita": {
-          "official": "Repubblica Araba Saharawi Democratica",
-          "common": "Sahara Occidentale"
+          "official": "Repubblica cinese (Taiwan)",
+          "common": "Taiwan"
         },
         "jpn": {
-          "official": "サハラアラブ民主共和国",
-          "common": "西サハラ"
+          "official": "中華民国",
+          "common": "台湾"
         },
         "kor": {
-          "official": "사하라 아랍 민주 공화국",
-          "common": "서사하라"
+          "official": "중화민국",
+          "common": "대만"
         },
         "nld": {
-          "official": "Sahrawi Arabische Democratische Republiek",
-          "common": "Westelijke Sahara"
+          "official": "Republiek China (Taiwan)",
+          "common": "Taiwan"
         },
         "per": {
-          "official": "صحرای غربی",
-          "common": "صحرای غربی"
+          "official": "جمهوری چین",
+          "common": "تایوان"
         },
         "pol": {
-          "official": "Saharyjska Arabska Republika Demokratyczna",
-          "common": "Sahara Zachodnia"
+          "official": "Republika Chińska (Tajwan)",
+          "common": "Tajwan"
         },
         "por": {
-          "official": "República Árabe Saharaui Democrática",
-          "common": "Saara Ocidental"
+          "official": "República da China",
+          "common": "Ilha Formosa"
         },
         "rus": {
-          "official": "Sahrawi Арабская Демократическая Республика",
-          "common": "Западная Сахара"
+          "official": "Китайская Республика",
+          "common": "Тайвань"
         },
         "slk": {
-          "official": "Západná Sahara",
-          "common": "Západná Sahara"
+          "official": "Čínska republika",
+          "common": "Taiwan"
         },
         "spa": {
-          "official": "República Árabe Saharaui Democrática",
-          "common": "Sahara Occidental"
+          "official": "República de China en Taiwán",
+          "common": "Taiwán"
         },
         "srp": {
-          "official": "Сахарска Арапска Демократска Република",
-          "common": "Сахарска Република"
+          "official": "Република Кина",
+          "common": "Тајван"
         },
         "swe": {
-          "official": "Västsahara",
-          "common": "Västsahara"
+          "official": "Republiken Kina",
+          "common": "Taiwan"
         },
         "tur": {
-          "official": "Sahra Demokratik Arap Cumhuriyeti",
-          "common": "Sahra Demokratik Arap Cumhuriyeti"
+          "official": "Çin Cumhuriyeti (Tayvan)",
+          "common": "Tayvan"
         },
         "urd": {
-          "official": "صحراوی عرب عوامی جمہوریہ",
-          "common": "مغربی صحارا"
-        },
-        "zho": {
-          "official": "阿拉伯撒哈拉民主共和国",
-          "common": "西撒哈拉"
+          "official": "جمہوریہ چین (تائیوان)",
+          "common": "تائیوان"
         }
       },
       "latlng": [
-        24.5,
-        -13
+        23.5,
+        121
       ],
       "landlocked": false,
-      "borders": [
-        "DZA",
-        "MRT",
-        "MAR"
-      ],
-      "area": 266000,
+      "area": 36193,
       "demonyms": {
         "eng": {
-          "f": "Sahrawi",
-          "m": "Sahrawi"
+          "f": "Taiwanese",
+          "m": "Taiwanese"
+        },
+        "fra": {
+          "f": "Taïwanaise",
+          "m": "Taïwanais"
         }
       },
-      "flag": "🇪🇭",
+      "flag": "🇹🇼",
       "maps": {
-        "googleMaps": "https://goo.gl/maps/7nU3mB69vP6zQp7A8",
-        "openStreetMaps": "https://www.openstreetmap.org/relation/5441968"
+        "googleMaps": "https://goo.gl/maps/HgMKFQjNadF3Wa6B6",
+        "openStreetMaps": "https://www.openstreetmap.org/relation/449220"
       },
-      "population": 510713,
+      "population": 23503349,
+      "fifa": "TPE",
       "car": {
         "signs": [
-          ""
+          "RC"
         ],
         "side": "right"
       },
       "timezones": [
-        "UTC+00:00"
+        "UTC+08:00"
       ],
       "continents": [
-        "Africa"
+        "Asia"
       ],
       "flags": {
-        "png": "https://flagcdn.com/w320/eh.png",
-        "svg": "https://flagcdn.com/eh.svg"
+        "png": "https://flagcdn.com/w320/tw.png",
+        "svg": "https://flagcdn.com/tw.svg"
       },
-      "coatOfArms": {},
+      "coatOfArms": {
+        "png": "https://mainfacts.com/media/images/coats_of_arms/tw.png",
+        "svg": "https://mainfacts.com/media/images/coats_of_arms/tw.svg"
+      },
       "startOfWeek": "monday",
       "capitalInfo": {
         "latlng": [
-          -13.28,
-          27.14
+          25.03,
+          121.52
         ]
       },
+      "postalCode": {
+        "format": "#####",
+        "regex": "^(\\d{5})$"
+      },
       "id": 5
+    },
+    {
+      "name": {
+        "common": "Costa Rica",
+        "official": "Republic of Costa Rica",
+        "nativeName": {
+          "spa": {
+            "official": "República de Costa Rica",
+            "common": "Costa Rica"
+          }
+        }
+      },
+      "tld": [
+        ".cr"
+      ],
+      "cca2": "CR",
+      "ccn3": "188",
+      "cca3": "CRI",
+      "cioc": "CRC",
+      "independent": true,
+      "status": "officially-assigned",
+      "unMember": true,
+      "currencies": {
+        "CRC": {
+          "name": "Costa Rican colón",
+          "symbol": "₡"
+        }
+      },
+      "idd": {
+        "root": "+5",
+        "suffixes": [
+          "06"
+        ]
+      },
+      "capital": [
+        "San José"
+      ],
+      "altSpellings": [
+        "CR",
+        "Republic of Costa Rica",
+        "República de Costa Rica"
+      ],
+      "region": "Americas",
+      "subregion": "Central America",
+      "languages": {
+        "spa": "Spanish"
+      },
+      "translations": {
+        "ara": {
+          "official": "جمهورية كوستاريكا",
+          "common": "كوستاريكا"
+        },
+        "bre": {
+          "official": "Republik Costa Rica",
+          "common": "Costa Rica"
+        },
+        "ces": {
+          "official": "Kostarická republika",
+          "common": "Kostarika"
+        },
+        "cym": {
+          "official": "Gweriniaeth Costa Rica",
+          "common": "Costa Rica"
+        },
+        "deu": {
+          "official": "Republik Costa Rica",
+          "common": "Costa Rica"
+        },
+        "est": {
+          "official": "Costa Rica Vabariik",
+          "common": "Costa Rica"
+        },
+        "fin": {
+          "official": "Costa Rican tasavalta",
+          "common": "Costa Rica"
+        },
+        "fra": {
+          "official": "République du Costa Rica",
+          "common": "Costa Rica"
+        },
+        "hrv": {
+          "official": "Republika Kostarika",
+          "common": "Kostarika"
+        },
+        "hun": {
+          "official": "Costa Rica-i Köztársaság",
+          "common": "Costa Rica"
+        },
+        "ita": {
+          "official": "Repubblica di Costa Rica",
+          "common": "Costa Rica"
+        },
+        "jpn": {
+          "official": "コスタリカ共和国",
+          "common": "コスタリカ"
+        },
+        "kor": {
+          "official": "코스타리카 공화국",
+          "common": "코스타리카"
+        },
+        "nld": {
+          "official": "Republiek Costa Rica",
+          "common": "Costa Rica"
+        },
+        "per": {
+          "official": "جمهوری کاستاریکا",
+          "common": "کاستاریکا"
+        },
+        "pol": {
+          "official": "Republika Kostaryki",
+          "common": "Kostaryka"
+        },
+        "por": {
+          "official": "República da Costa Rica",
+          "common": "Costa Rica"
+        },
+        "rus": {
+          "official": "Республика Коста-Рика",
+          "common": "Коста-Рика"
+        },
+        "slk": {
+          "official": "Kostarická republika",
+          "common": "Kostarika"
+        },
+        "spa": {
+          "official": "República de Costa Rica",
+          "common": "Costa Rica"
+        },
+        "srp": {
+          "official": "Република Костарика",
+          "common": "Костарика"
+        },
+        "swe": {
+          "official": "Republiken Costa Rica",
+          "common": "Costa Rica"
+        },
+        "tur": {
+          "official": "Kosta Rika Cumhuriyeti",
+          "common": "Kosta Rika"
+        },
+        "urd": {
+          "official": "جمہوریہ کوسٹاریکا",
+          "common": "کوسٹاریکا"
+        },
+        "zho": {
+          "official": "哥斯达黎加共和国",
+          "common": "哥斯达黎加"
+        }
+      },
+      "latlng": [
+        10,
+        -84
+      ],
+      "landlocked": false,
+      "borders": [
+        "NIC",
+        "PAN"
+      ],
+      "area": 51100,
+      "demonyms": {
+        "eng": {
+          "f": "Costa Rican",
+          "m": "Costa Rican"
+        },
+        "fra": {
+          "f": "Costaricaine",
+          "m": "Costaricain"
+        }
+      },
+      "flag": "🇨🇷",
+      "maps": {
+        "googleMaps": "https://goo.gl/maps/RFiwytjvNrpfKN7k6",
+        "openStreetMaps": "https://www.openstreetmap.org/relation/287667"
+      },
+      "population": 5094114,
+      "gini": {
+        "2019": 48.2
+      },
+      "fifa": "CRC",
+      "car": {
+        "signs": [
+          "CR"
+        ],
+        "side": "right"
+      },
+      "timezones": [
+        "UTC-06:00"
+      ],
+      "continents": [
+        "North America"
+      ],
+      "flags": {
+        "png": "https://flagcdn.com/w320/cr.png",
+        "svg": "https://flagcdn.com/cr.svg",
+        "alt": "The flag of Costa Rica is composed of five horizontal bands of blue, white, red, white and blue. The central red band is twice the height of the other four bands."
+      },
+      "coatOfArms": {
+        "png": "https://mainfacts.com/media/images/coats_of_arms/cr.png",
+        "svg": "https://mainfacts.com/media/images/coats_of_arms/cr.svg"
+      },
+      "startOfWeek": "monday",
+      "capitalInfo": {
+        "latlng": [
+          9.93,
+          -84.09
+        ]
+      },
+      "postalCode": {
+        "format": "####",
+        "regex": "^(\\d{4})$"
+      },
+      "id": 6
     }
   ]
 }
