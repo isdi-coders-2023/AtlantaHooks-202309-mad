@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { AppContext } from '../../context/context';
 import './detalis.scss';
 import { Country } from '../../model/country.types';
@@ -13,6 +13,9 @@ export default function DetailsPage() {
 
   return (
     <>
+      <Link to={'/'}>
+        <img src="../back-arrow.png" alt="Back Arrow" width={40} />
+      </Link>
       <div className="country-detail">
         <h2>{name}</h2>
         <img src={country?.flags.png} alt="" />

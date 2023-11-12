@@ -1,10 +1,11 @@
-import { SyntheticEvent, useContext } from 'react';
+import { SyntheticEvent, useContext, useRef } from 'react';
 import { AppContext } from '../../context/context';
 import { Country } from '../../model/country.types';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 export function EditCountry() {
   // tenias el mismo nombre de la función
+  const formRef = useRef<HTMLFormElement>(null);
   const { updateCountry } = useContext(AppContext);
   const navigate = useNavigate();
   const { id } = useParams();
@@ -50,54 +51,63 @@ export function EditCountry() {
     navigate('/favorites');
   };
 
+  const handleCancelCreateCountry = () => {
+    formRef.current?.reset();
+  };
+
   return (
-    <section className="add-country">
-      <div>
-        <h2>Edit country</h2>
-      </div>
+    <>
+      <Link to={'/favorites'}>
+        <img src="../back-arrow.png" alt="Back Arrow" width={40} />
+      </Link>
+      <section className="add-country">
+        <div>
+          <h2>Edit country</h2>
+        </div>
 
-      <div className="country-form">
-        <form action="" name="form" onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="country-name">Nombre</label>
-            <input type="text" name="name" required />
-          </div>
-          <div>
-            <label htmlFor="country-flag">Bandera</label>
-            <input
-              type="text"
-              name="flag"
-              placeholder="Inserta una URL"
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="country-capital">Capital</label>
-            <input type="text" name="capital" required />
-          </div>
-          <div>
-            <label htmlFor="country-area">Superficie</label>
-            <input type="number" name="area" required />
-          </div>
-          <div>
-            <label htmlFor="country-population">Poblacion</label>
-            <input type="number" name="population" required />
-          </div>
-          <div>
-            <label htmlFor="country-region">Continente</label>
-            <input type="text" name="region" required />
-          </div>
-          <div>
-            <label htmlFor="country-region">Subregión</label>
-            <input type="text" name="subregion" required />
-          </div>
+        <div className="country-form">
+          <form ref={formRef} action="" name="form" onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="country-name">Nombre</label>
+              <input type="text" name="name" required />
+            </div>
+            <div>
+              <label htmlFor="country-flag">Bandera</label>
+              <input
+                type="text"
+                name="flag"
+                placeholder="Inserta una URL"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="country-capital">Capital</label>
+              <input type="text" name="capital" required />
+            </div>
+            <div>
+              <label htmlFor="country-area">Superficie</label>
+              <input type="number" name="area" required />
+            </div>
+            <div>
+              <label htmlFor="country-population">Poblacion</label>
+              <input type="number" name="population" required />
+            </div>
+            <div>
+              <label htmlFor="country-region">Continente</label>
+              <input type="text" name="region" required />
+            </div>
+            <div>
+              <label htmlFor="country-region">Subregión</label>
+              <input type="text" name="subregion" required />
+            </div>
 
-          <div>
-            <button type="submit">Añadir</button>
-            <button>Cancelar</button>
-          </div>
-        </form>
-      </div>
-    </section>
+            <div>
+              <button type="submit">Añadir</button>
+              <button onClick={handleCancelCreateCountry}>Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </>
   );
 }
