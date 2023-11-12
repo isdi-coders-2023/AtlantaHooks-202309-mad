@@ -13,6 +13,27 @@ export function countryReducer(
   { type, payload }: ActionCountry
 ): AppState {
   switch (type) {
+    case 'create':
+      return {
+        ...state,
+        privateCountry: [...state.privateCountry, payload],
+      };
+    case 'delete':
+      return {
+        ...state,
+        privateCountry: state.privateCountry.filter(
+          (item: Country) => item.id !== payload
+        ),
+      };
+
+    case 'update':
+      return {
+        ...state,
+        privateCountry: state.privateCountry.map((item: Country) =>
+          item.id === payload.id ? payload : item
+        ),
+      };
+
     case 'load':
       return { ...state, country: payload };
     case 'changePage':

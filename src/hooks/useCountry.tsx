@@ -2,6 +2,7 @@ import { useMemo, useCallback, useReducer } from 'react';
 import { PrivateRepo, Repo } from '../services/repo';
 import { countryReducer } from '../reducers/reducer';
 import * as ac from '../reducers/actions';
+import { Country } from '../model/country.types';
 
 export function useCountry() {
   const [countriesState, dispatch] = useReducer(countryReducer, {
@@ -38,6 +39,7 @@ export function useCountry() {
     try {
       // Asíncrona
       const loadedPrivateCountries = await privaterepo.getCountry();
+      countriesState.privateCountry = loadedPrivateCountries;
       // Síncrono
       dispatch(ac.loadPrivateActionCreator(loadedPrivateCountries));
     } catch (error) {}
@@ -49,12 +51,39 @@ export function useCountry() {
     );
   };
 
-  const handleChangePrivateFilter = async (language: string) => {
+  const addCountry = async (country: Partial<Country>) => {
+    //cambié el nombre de la variable
     try {
-      countriesState.privatePage = 1;
-      const data = await privaterepo.getCountry(language);
-      dispatch(ac.loadPrivateActionCreator(data));
-    } catch (error) {}
+      const newCountry = await privaterepo.createCountry(country);
+
+      dispatch(ac.createActionCreator(newCountry));
+    } catch (error) {
+      console.log((error as Error).message);
+    }
+  };
+
+  const updateCountry = async (
+    id: Country['id'],
+    country: Partial<Country>
+  ) => {
+    try {
+      const updatedCountry = await privaterepo.updateCountry(id, country);
+      dispatch(ac.updateActionCreator(updatedCountry));
+    } catch (error) {
+      console.log((error as Error).message);
+    }
+  };
+
+  const deleteCountry = async (id: Country['id']) => {
+    try {
+      // Asíncrona -> API
+      await privaterepo.deleteCountry(id);
+      // Síncrono -> Vista
+      // setNotes(notes.filter((item) => item.id !== id));
+      dispatch(ac.deleteActionCreator(id));
+    } catch (error) {
+      console.log((error as Error).message);
+    }
   };
 
   return {
@@ -64,6 +93,8 @@ export function useCountry() {
     handleChangeFilter,
     loadPrivateCountries,
     handleChangePrivatePage,
-    handleChangePrivateFilter,
+    addCountry,
+    updateCountry,
+    deleteCountry,
   };
 }

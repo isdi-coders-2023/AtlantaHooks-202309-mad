@@ -42,7 +42,9 @@ describe('', () => {
           handleChangeFilter,
           loadPrivateCountries,
           handleChangePrivatePage,
-          handleChangePrivateFilter,
+          addCountry,
+          deleteCountry,
+          updateCountry,
         } = useCountry();
         const mockIncrement = -1;
         const mockLang = 'english';
@@ -75,8 +77,20 @@ describe('', () => {
             >
               privateChange
             </button>
-            <button onClick={() => handleChangePrivateFilter(mockLang)}>
-              privatefilter
+            <button
+              onClick={() =>
+                addCountry({ name: { common: 'hola' } } as Country)
+              }
+            >
+              add
+            </button>
+            <button onClick={() => deleteCountry('1')}>delete</button>
+            <button
+              onClick={() =>
+                updateCountry('1', { name: { common: 'hola' } } as Country)
+              }
+            >
+              update
             </button>
           </>
         );
@@ -96,7 +110,8 @@ describe('', () => {
         page: 1,
         country: [],
       } as unknown as AppState;
-      const mockReducer = jest.fn();
+      let mockReducer;
+      mockReducer = jest.fn();
       const button = screen.getByRole('button', { name: 'Change' });
       await userEvent.click(button);
       expect(useReducer(mockReducer, mockState)[1]).toHaveBeenCalled();
@@ -122,10 +137,28 @@ describe('', () => {
       await userEvent.click(button);
       expect(useReducer(mockReducer, mockState)[1]).toHaveBeenCalled();
     });
+
     test('', async () => {
-      const button = screen.getByRole('button', { name: 'privatefilter' });
-      await userEvent.click(button);
-      expect(PrivateRepo.prototype.getCountry).toHaveBeenCalled();
+      const mockState: AppState = {
+        page: 1,
+        country: [],
+      } as unknown as AppState;
+      let mockReducer;
+      mockReducer = jest.fn();
+      const deleteChar = screen.getByText('delete');
+      expect(deleteChar).toBeInTheDocument();
+      await userEvent.click(deleteChar);
+      expect(useReducer(mockReducer, mockState)[1]).toHaveBeenCalled();
+
+      const modifyChar = screen.getByText('update');
+      expect(modifyChar).toBeInTheDocument();
+      await userEvent.click(modifyChar);
+      expect(useReducer(mockReducer, mockState)[1]).toHaveBeenCalled();
+
+      const addChar = screen.getByText('add');
+      expect(addChar).toBeInTheDocument();
+      await userEvent.click(addChar);
+      expect(useReducer(mockReducer, mockState)[1]).toHaveBeenCalled();
     });
   });
 });

@@ -1,23 +1,37 @@
 import './card.scss';
 import { Country } from '../../model/country.types';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AppContext } from '../../context/context';
 
 type PropsType = {
   country: Country;
 };
 export function Card({ country }: PropsType) {
-  /*   const handleAddToFavorites = () => {};
-  */
+  const { addCountry, countriesState } = useContext(AppContext);
+  const handleAddToFavorites = () => {
+    !countriesState.privateCountry.some(
+      (c) => c.name.common === country.name.common
+    )
+      ? addCountry(country)
+      : null;
+  };
+
   return (
     <div className="card">
+      <div className="card-header">
+        <h2>{country.name.common}</h2>
+        <img
+          role="button"
+          src="./star-icon.png"
+          alt="Add Country Icon"
+          onClick={handleAddToFavorites}
+        />
+      </div>
       <Link
         to={'/details/' + country.name.common}
         style={{ textDecoration: 'none' }}
       >
-        <div className="card-header">
-          <h2>{country.name.common}</h2>
-          <img role="button" src="./star-icon.png" alt="Add Country Icon" />
-        </div>
         <div className="card-image">
           <img src={country.flags.png} alt="Country Flag" />
         </div>

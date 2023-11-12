@@ -1,5 +1,5 @@
 import { SyntheticEvent, useContext, useEffect, useState } from 'react';
-
+import './filter.scss';
 import { AppContext } from '../../context/context';
 
 export function Filter() {
@@ -18,6 +18,7 @@ export function Filter() {
   };
   return (
     <select
+      className="filter"
       name="filter_language"
       id="filter_language"
       value={selectedLanguage}

@@ -1,23 +1,29 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { AppContext } from '../../context/context';
-import './detalis.scss';
+import '../fav_details/fav_details.scss';
 import { Country } from '../../model/country.types';
 
-export default function DetailsPage() {
-  const { name } = useParams();
-  const { countriesState } = useContext(AppContext);
-  const country = countriesState.country.find(
-    (item: Country) => item.name.common === name
+export default function PrivateDetailsPage() {
+  const { id } = useParams();
+  const { countriesState, loadPrivateCountries } = useContext(AppContext);
+  console.log(countriesState.privateCountry);
+
+  useEffect(() => {
+    loadPrivateCountries();
+  }, [loadPrivateCountries]);
+
+  const country = countriesState.privateCountry.find(
+    (item: Country) => item.id == (id as string)
   );
 
   return (
     <>
-      <Link to={'/'}>
+      <Link to={'/favorites'}>
         <img src="../back-arrow.png" alt="Back Arrow" width={40} />
       </Link>
       <div className="country-detail">
-        <h2>{name}</h2>
+        <h2>{country?.name.common}</h2>
         <img src={country?.flags.png} alt="" />
         <h3>
           Capital: <span className="detail-subtitle">{country?.capital}</span>
