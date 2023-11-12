@@ -40,4 +40,44 @@ export class PrivateRepo {
       throw new Error(response.status + ' ' + response.statusText);
     return response.json();
   }
+
+  async createCountry(newCountry: Partial<Country>): Promise<Country> {
+    const response = await fetch(this.privateApiUrl, {
+      method: 'POST',
+      body: JSON.stringify(newCountry),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (!response.ok)
+      throw new Error(response.status + ' ' + response.statusText);
+    return response.json();
+  }
+
+  async updateCountry(
+    id: Country['name']['common'],
+    updatedCountry: Partial<Country>
+  ): Promise<Country> {
+    const finalUrl = `${this.privateApiUrl}/${id}`;
+    const response = await fetch(finalUrl, {
+      method: 'PATCH',
+      body: JSON.stringify(updatedCountry),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (!response.ok)
+      throw new Error(response.status + ' ' + response.statusText);
+    return response.json();
+  }
+
+  async deleteCountry(id: Country['name']['common']): Promise<Country[]> {
+    const finalUrl = `${this.privateApiUrl}/${id}`;
+    const response = await fetch(finalUrl, {
+      method: 'DELETE',
+    });
+    if (!response.ok)
+      throw new Error(response.status + ' ' + response.statusText);
+    return response.json();
+  }
 }

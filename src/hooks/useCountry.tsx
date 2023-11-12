@@ -2,6 +2,7 @@ import { useMemo, useCallback, useReducer } from 'react';
 import { PrivateRepo, Repo } from '../services/repo';
 import { countryReducer } from '../reducers/reducer';
 import * as ac from '../reducers/actions';
+import { Country } from '../model/country.types';
 
 export function useCountry() {
   const [countriesState, dispatch] = useReducer(countryReducer, {
@@ -57,6 +58,41 @@ export function useCountry() {
     } catch (error) {}
   };
 
+  const addCountry = async (country: Partial<Country>) => {
+    //cambié el nombre de la variable
+    try {
+      const newCountry = await privaterepo.createCountry(country);
+
+      dispatch(ac.createActionCreator(newCountry));
+    } catch (error) {
+      console.log((error as Error).message);
+    }
+  };
+
+  const updateCountry = async (
+    id: Country['name']['common'],
+    country: Partial<Country>
+  ) => {
+    try {
+      const updatedCountry = await privaterepo.updateCountry(id, country);
+      dispatch(ac.updateActionCreator(updatedCountry));
+    } catch (error) {
+      console.log((error as Error).message);
+    }
+  };
+
+  const deleteCountry = async (id: Country['name']['common']) => {
+    try {
+      // Asíncrona -> API
+      await privaterepo.deleteCountry(id);
+      // Síncrono -> Vista
+      // setNotes(notes.filter((item) => item.id !== id));
+      dispatch(ac.deleteActionCreator(id));
+    } catch (error) {
+      console.log((error as Error).message);
+    }
+  };
+
   return {
     countriesState,
     loadCountries,
@@ -65,5 +101,8 @@ export function useCountry() {
     loadPrivateCountries,
     handleChangePrivatePage,
     handleChangePrivateFilter,
+    addCountry,
+    updateCountry,
+    deleteCountry,
   };
 }

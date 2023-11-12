@@ -11,7 +11,9 @@
           }
         }
       },
-      "tld": [".tc"],
+      "tld": [
+        ".tc"
+      ],
       "cca2": "TC",
       "ccn3": "796",
       "cca3": "TCA",
@@ -26,10 +28,16 @@
       },
       "idd": {
         "root": "+1",
-        "suffixes": ["649"]
+        "suffixes": [
+          "649"
+        ]
       },
-      "capital": ["Cockburn Town"],
-      "altSpellings": ["TC"],
+      "capital": [
+        "Cockburn Town"
+      ],
+      "altSpellings": [
+        "TC"
+      ],
       "region": "Americas",
       "subregion": "Caribbean",
       "languages": {
@@ -137,9 +145,12 @@
           "common": "特克斯和凯科斯群岛"
         }
       },
-      "latlng": [21.75, -71.58333333],
+      "latlng": [
+        21.75,
+        -71.58333333
+      ],
       "landlocked": false,
-      "area": 948.0,
+      "area": 948,
       "demonyms": {
         "eng": {
           "f": "Turks and Caicos Islander",
@@ -154,11 +165,17 @@
       "population": 38718,
       "fifa": "TCA",
       "car": {
-        "signs": ["GB"],
+        "signs": [
+          "GB"
+        ],
         "side": "left"
       },
-      "timezones": ["UTC-04:00"],
-      "continents": ["North America"],
+      "timezones": [
+        "UTC-04:00"
+      ],
+      "continents": [
+        "North America"
+      ],
       "flags": {
         "png": "https://flagcdn.com/w320/tc.png",
         "svg": "https://flagcdn.com/tc.svg"
@@ -166,12 +183,16 @@
       "coatOfArms": {},
       "startOfWeek": "monday",
       "capitalInfo": {
-        "latlng": [21.46, -71.14]
+        "latlng": [
+          21.46,
+          -71.14
+        ]
       },
       "postalCode": {
         "format": "TKCA 1ZZ",
         "regex": "^(TKCA 1ZZ)$"
-      }
+      },
+      "id": 1
     },
     {
       "name": {
@@ -184,7 +205,9 @@
           }
         }
       },
-      "tld": [".ng"],
+      "tld": [
+        ".ng"
+      ],
       "cca2": "NG",
       "ccn3": "566",
       "cca3": "NGA",
@@ -200,9 +223,13 @@
       },
       "idd": {
         "root": "+2",
-        "suffixes": ["34"]
+        "suffixes": [
+          "34"
+        ]
       },
-      "capital": ["Abuja"],
+      "capital": [
+        "Abuja"
+      ],
       "altSpellings": [
         "NG",
         "Nijeriya",
@@ -316,10 +343,18 @@
           "common": "尼日利亚"
         }
       },
-      "latlng": [10.0, 8.0],
+      "latlng": [
+        10,
+        8
+      ],
       "landlocked": false,
-      "borders": ["BEN", "CMR", "TCD", "NER"],
-      "area": 923768.0,
+      "borders": [
+        "BEN",
+        "CMR",
+        "TCD",
+        "NER"
+      ],
+      "area": 923768,
       "demonyms": {
         "eng": {
           "f": "Nigerian",
@@ -341,11 +376,17 @@
       },
       "fifa": "NGA",
       "car": {
-        "signs": ["WAN"],
+        "signs": [
+          "WAN"
+        ],
         "side": "right"
       },
-      "timezones": ["UTC+01:00"],
-      "continents": ["Africa"],
+      "timezones": [
+        "UTC+01:00"
+      ],
+      "continents": [
+        "Africa"
+      ],
       "flags": {
         "png": "https://flagcdn.com/w320/ng.png",
         "svg": "https://flagcdn.com/ng.svg",
@@ -357,1321 +398,56 @@
       },
       "startOfWeek": "monday",
       "capitalInfo": {
-        "latlng": [9.08, 7.53]
+        "latlng": [
+          9.08,
+          7.53
+        ]
       },
       "postalCode": {
         "format": "######",
         "regex": "^(\\d{6})$"
-      }
+      },
+      "id": 2
     },
     {
       "name": {
-        "common": "Western Sahara",
-        "official": "Sahrawi Arab Democratic Republic",
-        "nativeName": {
-          "ber": {
-            "official": "Sahrawi Arab Democratic Republic",
-            "common": "Western Sahara"
-          },
-          "mey": {
-            "official": "الجمهورية العربية الصحراوية الديمقراطية",
-            "common": "الصحراء الغربية"
-          },
-          "spa": {
-            "official": "República Árabe Saharaui Democrática",
-            "common": "Sahara Occidental"
-          }
-        }
-      },
-      "tld": [".eh"],
-      "cca2": "EH",
-      "ccn3": "732",
-      "cca3": "ESH",
-      "independent": false,
-      "status": "officially-assigned",
-      "unMember": false,
-      "currencies": {
-        "DZD": {
-          "name": "Algerian dinar",
-          "symbol": "دج"
-        },
-        "MAD": {
-          "name": "Moroccan dirham",
-          "symbol": "DH"
-        },
-        "MRU": {
-          "name": "Mauritanian ouguiya",
-          "symbol": "UM"
-        }
-      },
-      "idd": {
-        "root": "+2",
-        "suffixes": ["125288", "125289"]
-      },
-      "capital": ["El Aaiún"],
-      "altSpellings": ["EH", "Taneẓroft Tutrimt"],
-      "region": "Africa",
-      "subregion": "Northern Africa",
-      "languages": {
-        "ber": "Berber",
-        "mey": "Hassaniya",
-        "spa": "Spanish"
-      },
-      "translations": {
-        "ara": {
-          "official": "الجمهورية العربية الصحراوية الديمقراطية",
-          "common": "الصحراء الغربية"
-        },
-        "bre": {
-          "official": "Republik Arab Saharaoui Demokratel",
-          "common": "Sahara ar C'hornôg"
-        },
-        "ces": {
-          "official": "Západní Sahara",
-          "common": "Západní Sahara"
-        },
-        "cym": {
-          "official": "Sahrawi Arab Democratic Republic",
-          "common": "Western Sahara"
-        },
-        "deu": {
-          "official": "Demokratische Arabische Republik Sahara",
-          "common": "Westsahara"
-        },
-        "est": {
-          "official": "Lääne-Sahara",
-          "common": "Lääne-Sahara"
-        },
-        "fin": {
-          "official": "Länsi-Sahara",
-          "common": "Länsi-Sahara"
-        },
-        "fra": {
-          "official": "République arabe sahraouie démocratique",
-          "common": "Sahara Occidental"
-        },
-        "hrv": {
-          "official": "Sahrawi Arab Demokratska Republika",
-          "common": "Zapadna Sahara"
-        },
-        "hun": {
-          "official": "Nyugat-Szahara",
-          "common": "Nyugat-Szahara"
-        },
-        "ita": {
-          "official": "Repubblica Araba Saharawi Democratica",
-          "common": "Sahara Occidentale"
-        },
-        "jpn": {
-          "official": "サハラアラブ民主共和国",
-          "common": "西サハラ"
-        },
-        "kor": {
-          "official": "사하라 아랍 민주 공화국",
-          "common": "서사하라"
-        },
-        "nld": {
-          "official": "Sahrawi Arabische Democratische Republiek",
-          "common": "Westelijke Sahara"
-        },
-        "per": {
-          "official": "صحرای غربی",
-          "common": "صحرای غربی"
-        },
-        "pol": {
-          "official": "Saharyjska Arabska Republika Demokratyczna",
-          "common": "Sahara Zachodnia"
-        },
-        "por": {
-          "official": "República Árabe Saharaui Democrática",
-          "common": "Saara Ocidental"
-        },
-        "rus": {
-          "official": "Sahrawi Арабская Демократическая Республика",
-          "common": "Западная Сахара"
-        },
-        "slk": {
-          "official": "Západná Sahara",
-          "common": "Západná Sahara"
-        },
-        "spa": {
-          "official": "República Árabe Saharaui Democrática",
-          "common": "Sahara Occidental"
-        },
-        "srp": {
-          "official": "Сахарска Арапска Демократска Република",
-          "common": "Сахарска Република"
-        },
-        "swe": {
-          "official": "Västsahara",
-          "common": "Västsahara"
-        },
-        "tur": {
-          "official": "Sahra Demokratik Arap Cumhuriyeti",
-          "common": "Sahra Demokratik Arap Cumhuriyeti"
-        },
-        "urd": {
-          "official": "صحراوی عرب عوامی جمہوریہ",
-          "common": "مغربی صحارا"
-        },
-        "zho": {
-          "official": "阿拉伯撒哈拉民主共和国",
-          "common": "西撒哈拉"
-        }
-      },
-      "latlng": [24.5, -13.0],
-      "landlocked": false,
-      "borders": ["DZA", "MRT", "MAR"],
-      "area": 266000.0,
-      "demonyms": {
-        "eng": {
-          "f": "Sahrawi",
-          "m": "Sahrawi"
-        }
-      },
-      "flag": "🇪🇭",
-      "maps": {
-        "googleMaps": "https://goo.gl/maps/7nU3mB69vP6zQp7A8",
-        "openStreetMaps": "https://www.openstreetmap.org/relation/5441968"
-      },
-      "population": 510713,
-      "car": {
-        "signs": [""],
-        "side": "right"
-      },
-      "timezones": ["UTC+00:00"],
-      "continents": ["Africa"],
-      "flags": {
-        "png": "https://flagcdn.com/w320/eh.png",
-        "svg": "https://flagcdn.com/eh.svg"
-      },
-      "coatOfArms": {},
-      "startOfWeek": "monday",
-      "capitalInfo": {
-        "latlng": [-13.28, 27.14]
-      }
-    },
-    {
-      "name": {
-        "common": "Taiwan",
-        "official": "Republic of China (Taiwan)",
-        "nativeName": {
-          "zho": {
-            "official": "中華民國",
-            "common": "台灣"
-          }
-        }
-      },
-      "tld": [".tw", ".台灣", ".台湾"],
-      "cca2": "TW",
-      "ccn3": "158",
-      "cca3": "TWN",
-      "cioc": "TPE",
-      "independent": false,
-      "status": "officially-assigned",
-      "unMember": false,
-      "currencies": {
-        "TWD": {
-          "name": "New Taiwan dollar",
-          "symbol": "$"
-        }
-      },
-      "idd": {
-        "root": "+8",
-        "suffixes": ["86"]
-      },
-      "capital": ["Taipei"],
-      "altSpellings": [
-        "TW",
-        "Táiwān",
-        "Republic of China",
-        "中華民國",
-        "Zhōnghuá Mínguó",
-        "Chinese Taipei"
-      ],
-      "region": "Asia",
-      "subregion": "Eastern Asia",
-      "languages": {
-        "zho": "Chinese"
-      },
-      "translations": {
-        "ara": {
-          "official": "جمهورية الصين (تايوان)",
-          "common": "تايوان"
-        },
-        "bre": {
-          "official": "Republik Sina (Taiwan)",
-          "common": "Taiwan"
-        },
-        "ces": {
-          "official": "Čínská republika",
-          "common": "Tchaj-wan"
-        },
-        "cym": {
-          "official": "Republic of China (Taiwan)",
-          "common": "Taiwan"
-        },
-        "deu": {
-          "official": "Republik China (Taiwan)",
-          "common": "Taiwan"
-        },
-        "est": {
-          "official": "Taiwani",
-          "common": "Taiwan"
-        },
-        "fin": {
-          "official": "Kiinan tasavalta",
-          "common": "Taiwan"
-        },
-        "fra": {
-          "official": "République de Chine (Taïwan)",
-          "common": "Taïwan"
-        },
-        "hrv": {
-          "official": "Republika Kina",
-          "common": "Tajvan"
-        },
-        "hun": {
-          "official": "Kínai Köztársaság",
-          "common": "Tajvan"
-        },
-        "ita": {
-          "official": "Repubblica cinese (Taiwan)",
-          "common": "Taiwan"
-        },
-        "jpn": {
-          "official": "中華民国",
-          "common": "台湾"
-        },
-        "kor": {
-          "official": "중화민국",
-          "common": "대만"
-        },
-        "nld": {
-          "official": "Republiek China (Taiwan)",
-          "common": "Taiwan"
-        },
-        "per": {
-          "official": "جمهوری چین",
-          "common": "تایوان"
-        },
-        "pol": {
-          "official": "Republika Chińska (Tajwan)",
-          "common": "Tajwan"
-        },
-        "por": {
-          "official": "República da China",
-          "common": "Ilha Formosa"
-        },
-        "rus": {
-          "official": "Китайская Республика",
-          "common": "Тайвань"
-        },
-        "slk": {
-          "official": "Čínska republika",
-          "common": "Taiwan"
-        },
-        "spa": {
-          "official": "República de China en Taiwán",
-          "common": "Taiwán"
-        },
-        "srp": {
-          "official": "Република Кина",
-          "common": "Тајван"
-        },
-        "swe": {
-          "official": "Republiken Kina",
-          "common": "Taiwan"
-        },
-        "tur": {
-          "official": "Çin Cumhuriyeti (Tayvan)",
-          "common": "Tayvan"
-        },
-        "urd": {
-          "official": "جمہوریہ چین (تائیوان)",
-          "common": "تائیوان"
-        }
-      },
-      "latlng": [23.5, 121.0],
-      "landlocked": false,
-      "area": 36193.0,
-      "demonyms": {
-        "eng": {
-          "f": "Taiwanese",
-          "m": "Taiwanese"
-        },
-        "fra": {
-          "f": "Taïwanaise",
-          "m": "Taïwanais"
-        }
-      },
-      "flag": "🇹🇼",
-      "maps": {
-        "googleMaps": "https://goo.gl/maps/HgMKFQjNadF3Wa6B6",
-        "openStreetMaps": "https://www.openstreetmap.org/relation/449220"
-      },
-      "population": 23503349,
-      "fifa": "TPE",
-      "car": {
-        "signs": ["RC"],
-        "side": "right"
-      },
-      "timezones": ["UTC+08:00"],
-      "continents": ["Asia"],
-      "flags": {
-        "png": "https://flagcdn.com/w320/tw.png",
-        "svg": "https://flagcdn.com/tw.svg"
-      },
-      "coatOfArms": {
-        "png": "https://mainfacts.com/media/images/coats_of_arms/tw.png",
-        "svg": "https://mainfacts.com/media/images/coats_of_arms/tw.svg"
-      },
-      "startOfWeek": "monday",
-      "capitalInfo": {
-        "latlng": [25.03, 121.52]
-      },
-      "postalCode": {
-        "format": "#####",
-        "regex": "^(\\d{5})$"
-      }
-    },
-    {
-      "name": {
-        "common": "Costa Rica",
-        "official": "Republic of Costa Rica",
-        "nativeName": {
-          "spa": {
-            "official": "República de Costa Rica",
-            "common": "Costa Rica"
-          }
-        }
-      },
-      "tld": [".cr"],
-      "cca2": "CR",
-      "ccn3": "188",
-      "cca3": "CRI",
-      "cioc": "CRC",
-      "independent": true,
-      "status": "officially-assigned",
-      "unMember": true,
-      "currencies": {
-        "CRC": {
-          "name": "Costa Rican colón",
-          "symbol": "₡"
-        }
-      },
-      "idd": {
-        "root": "+5",
-        "suffixes": ["06"]
-      },
-      "capital": ["San José"],
-      "altSpellings": [
-        "CR",
-        "Republic of Costa Rica",
-        "República de Costa Rica"
-      ],
-      "region": "Americas",
-      "subregion": "Central America",
-      "languages": {
-        "spa": "Spanish"
-      },
-      "translations": {
-        "ara": {
-          "official": "جمهورية كوستاريكا",
-          "common": "كوستاريكا"
-        },
-        "bre": {
-          "official": "Republik Costa Rica",
-          "common": "Costa Rica"
-        },
-        "ces": {
-          "official": "Kostarická republika",
-          "common": "Kostarika"
-        },
-        "cym": {
-          "official": "Gweriniaeth Costa Rica",
-          "common": "Costa Rica"
-        },
-        "deu": {
-          "official": "Republik Costa Rica",
-          "common": "Costa Rica"
-        },
-        "est": {
-          "official": "Costa Rica Vabariik",
-          "common": "Costa Rica"
-        },
-        "fin": {
-          "official": "Costa Rican tasavalta",
-          "common": "Costa Rica"
-        },
-        "fra": {
-          "official": "République du Costa Rica",
-          "common": "Costa Rica"
-        },
-        "hrv": {
-          "official": "Republika Kostarika",
-          "common": "Kostarika"
-        },
-        "hun": {
-          "official": "Costa Rica-i Köztársaság",
-          "common": "Costa Rica"
-        },
-        "ita": {
-          "official": "Repubblica di Costa Rica",
-          "common": "Costa Rica"
-        },
-        "jpn": {
-          "official": "コスタリカ共和国",
-          "common": "コスタリカ"
-        },
-        "kor": {
-          "official": "코스타리카 공화국",
-          "common": "코스타리카"
-        },
-        "nld": {
-          "official": "Republiek Costa Rica",
-          "common": "Costa Rica"
-        },
-        "per": {
-          "official": "جمهوری کاستاریکا",
-          "common": "کاستاریکا"
-        },
-        "pol": {
-          "official": "Republika Kostaryki",
-          "common": "Kostaryka"
-        },
-        "por": {
-          "official": "República da Costa Rica",
-          "common": "Costa Rica"
-        },
-        "rus": {
-          "official": "Республика Коста-Рика",
-          "common": "Коста-Рика"
-        },
-        "slk": {
-          "official": "Kostarická republika",
-          "common": "Kostarika"
-        },
-        "spa": {
-          "official": "República de Costa Rica",
-          "common": "Costa Rica"
-        },
-        "srp": {
-          "official": "Република Костарика",
-          "common": "Костарика"
-        },
-        "swe": {
-          "official": "Republiken Costa Rica",
-          "common": "Costa Rica"
-        },
-        "tur": {
-          "official": "Kosta Rika Cumhuriyeti",
-          "common": "Kosta Rika"
-        },
-        "urd": {
-          "official": "جمہوریہ کوسٹاریکا",
-          "common": "کوسٹاریکا"
-        },
-        "zho": {
-          "official": "哥斯达黎加共和国",
-          "common": "哥斯达黎加"
-        }
-      },
-      "latlng": [10.0, -84.0],
-      "landlocked": false,
-      "borders": ["NIC", "PAN"],
-      "area": 51100.0,
-      "demonyms": {
-        "eng": {
-          "f": "Costa Rican",
-          "m": "Costa Rican"
-        },
-        "fra": {
-          "f": "Costaricaine",
-          "m": "Costaricain"
-        }
-      },
-      "flag": "🇨🇷",
-      "maps": {
-        "googleMaps": "https://goo.gl/maps/RFiwytjvNrpfKN7k6",
-        "openStreetMaps": "https://www.openstreetmap.org/relation/287667"
-      },
-      "population": 5094114,
-      "gini": {
-        "2019": 48.2
-      },
-      "fifa": "CRC",
-      "car": {
-        "signs": ["CR"],
-        "side": "right"
-      },
-      "timezones": ["UTC-06:00"],
-      "continents": ["North America"],
-      "flags": {
-        "png": "https://flagcdn.com/w320/cr.png",
-        "svg": "https://flagcdn.com/cr.svg",
-        "alt": "The flag of Costa Rica is composed of five horizontal bands of blue, white, red, white and blue. The central red band is twice the height of the other four bands."
-      },
-      "coatOfArms": {
-        "png": "https://mainfacts.com/media/images/coats_of_arms/cr.png",
-        "svg": "https://mainfacts.com/media/images/coats_of_arms/cr.svg"
-      },
-      "startOfWeek": "monday",
-      "capitalInfo": {
-        "latlng": [9.93, -84.09]
-      },
-      "postalCode": {
-        "format": "####",
-        "regex": "^(\\d{4})$"
-      }
-    },
-    {
-      "name": {
-        "common": "Benin",
-        "official": "Republic of Benin",
-        "nativeName": {
-          "fra": {
-            "official": "République du Bénin",
-            "common": "Bénin"
-          }
-        }
-      },
-      "tld": [".bj"],
-      "cca2": "BJ",
-      "ccn3": "204",
-      "cca3": "BEN",
-      "cioc": "BEN",
-      "independent": true,
-      "status": "officially-assigned",
-      "unMember": true,
-      "currencies": {
-        "XOF": {
-          "name": "West African CFA franc",
-          "symbol": "Fr"
-        }
-      },
-      "idd": {
-        "root": "+2",
-        "suffixes": ["29"]
-      },
-      "capital": ["Porto-Novo"],
-      "altSpellings": ["BJ", "Republic of Benin", "République du Bénin"],
-      "region": "Africa",
-      "subregion": "Western Africa",
-      "languages": {
-        "fra": "French"
-      },
-      "translations": {
-        "ara": {
-          "official": "جمهورية بنين",
-          "common": "بنين"
-        },
-        "bre": {
-          "official": "Republik Benin",
-          "common": "Benin"
-        },
-        "ces": {
-          "official": "Beninská republika",
-          "common": "Benin"
-        },
-        "cym": {
-          "official": "Gweriniaeth Benin",
-          "common": "Benin"
-        },
-        "deu": {
-          "official": "Republik Benin",
-          "common": "Benin"
-        },
-        "est": {
-          "official": "Benini Vabariik",
-          "common": "Benin"
-        },
-        "fin": {
-          "official": "Beninin tasavalta",
-          "common": "Benin"
-        },
-        "fra": {
-          "official": "République du Bénin",
-          "common": "Bénin"
-        },
-        "hrv": {
-          "official": "Republika Benin",
-          "common": "Benin"
-        },
-        "hun": {
-          "official": "Benini Köztársaság",
-          "common": "Benin"
-        },
-        "ita": {
-          "official": "Repubblica del Benin",
-          "common": "Benin"
-        },
-        "jpn": {
-          "official": "ベナン共和国",
-          "common": "ベナン"
-        },
-        "kor": {
-          "official": "베냉 공화국",
-          "common": "베냉"
-        },
-        "nld": {
-          "official": "Republiek Benin",
-          "common": "Benin"
-        },
-        "per": {
-          "official": "جمهوری بنین",
-          "common": "بنین"
-        },
-        "pol": {
-          "official": "Benin",
-          "common": "Benin"
-        },
-        "por": {
-          "official": "República do Benin",
-          "common": "Benin"
-        },
-        "rus": {
-          "official": "Республика Бенин",
-          "common": "Бенин"
-        },
-        "slk": {
-          "official": "Beninská republika",
-          "common": "Benin"
-        },
-        "spa": {
-          "official": "República de Benin",
-          "common": "Benín"
-        },
-        "srp": {
-          "official": "Република Бенин",
-          "common": "Бенин"
-        },
-        "swe": {
-          "official": "Republiken Benin",
-          "common": "Benin"
-        },
-        "tur": {
-          "official": "Benin Cumhuriyeti",
-          "common": "Benin"
-        },
-        "urd": {
-          "official": "جمہوریہ بینن",
-          "common": "بینن"
-        },
-        "zho": {
-          "official": "贝宁共和国",
-          "common": "贝宁"
-        }
-      },
-      "latlng": [9.5, 2.25],
-      "landlocked": false,
-      "borders": ["BFA", "NER", "NGA", "TGO"],
-      "area": 112622.0,
-      "demonyms": {
-        "eng": {
-          "f": "Beninese",
-          "m": "Beninese"
-        },
-        "fra": {
-          "f": "Béninoise",
-          "m": "Béninois"
-        }
-      },
-      "flag": "🇧🇯",
-      "maps": {
-        "googleMaps": "https://goo.gl/maps/uMw1BsHEXQYgVFFu6",
-        "openStreetMaps": "https://www.openstreetmap.org/relation/192784"
-      },
-      "population": 12123198,
-      "gini": {
-        "2015": 47.8
-      },
-      "fifa": "BEN",
-      "car": {
-        "signs": ["DY"],
-        "side": "right"
-      },
-      "timezones": ["UTC+01:00"],
-      "continents": ["Africa"],
-      "flags": {
-        "png": "https://flagcdn.com/w320/bj.png",
-        "svg": "https://flagcdn.com/bj.svg",
-        "alt": "The flag of Benin features a green vertical band on its hoist side that takes up about two-fifth the width of the field and two equal horizontal bands of yellow and red adjoining the vertical band."
-      },
-      "coatOfArms": {
-        "png": "https://mainfacts.com/media/images/coats_of_arms/bj.png",
-        "svg": "https://mainfacts.com/media/images/coats_of_arms/bj.svg"
-      },
-      "startOfWeek": "monday",
-      "capitalInfo": {
-        "latlng": [6.48, 2.62]
-      }
-    },
-    {
-      "name": {
-        "common": "Honduras",
-        "official": "Republic of Honduras",
-        "nativeName": {
-          "spa": {
-            "official": "República de Honduras",
-            "common": "Honduras"
-          }
-        }
-      },
-      "tld": [".hn"],
-      "cca2": "HN",
-      "ccn3": "340",
-      "cca3": "HND",
-      "cioc": "HON",
-      "independent": true,
-      "status": "officially-assigned",
-      "unMember": true,
-      "currencies": {
-        "HNL": {
-          "name": "Honduran lempira",
-          "symbol": "L"
-        }
-      },
-      "idd": {
-        "root": "+5",
-        "suffixes": ["04"]
-      },
-      "capital": ["Tegucigalpa"],
-      "altSpellings": ["HN", "Republic of Honduras", "República de Honduras"],
-      "region": "Americas",
-      "subregion": "Central America",
-      "languages": {
-        "spa": "Spanish"
-      },
-      "translations": {
-        "ara": {
-          "official": "جمهورية هندوراس",
-          "common": "هندوراس"
-        },
-        "bre": {
-          "official": "Republik Honduras",
-          "common": "Honduras"
-        },
-        "ces": {
-          "official": "Honduraská republika",
-          "common": "Honduras"
-        },
-        "cym": {
-          "official": "Republic of Honduras",
-          "common": "Honduras"
-        },
-        "deu": {
-          "official": "Republik Honduras",
-          "common": "Honduras"
-        },
-        "est": {
-          "official": "Hondurase Vabariik",
-          "common": "Honduras"
-        },
-        "fin": {
-          "official": "Hondurasin tasavalta",
-          "common": "Honduras"
-        },
-        "fra": {
-          "official": "République du Honduras",
-          "common": "Honduras"
-        },
-        "hrv": {
-          "official": "Republika Honduras",
-          "common": "Honduras"
-        },
-        "hun": {
-          "official": "Hondurasi Köztársaság",
-          "common": "Honduras"
-        },
-        "ita": {
-          "official": "Repubblica di Honduras",
-          "common": "Honduras"
-        },
-        "jpn": {
-          "official": "ホンジュラス共和国",
-          "common": "ホンジュラス"
-        },
-        "kor": {
-          "official": "온두라스 공화국",
-          "common": "온두라스"
-        },
-        "nld": {
-          "official": "Republiek Honduras",
-          "common": "Honduras"
-        },
-        "per": {
-          "official": "جمهوری هندوراس",
-          "common": "هُندوراس"
-        },
-        "pol": {
-          "official": "Republika Hondurasu",
-          "common": "Honduras"
-        },
-        "por": {
-          "official": "República de Honduras",
-          "common": "Honduras"
-        },
-        "rus": {
-          "official": "Республика Гондурас",
-          "common": "Гондурас"
-        },
-        "slk": {
-          "official": "Honduraská republika",
-          "common": "Honduras"
-        },
-        "spa": {
-          "official": "República de Honduras",
-          "common": "Honduras"
-        },
-        "srp": {
-          "official": "Република Хондурас",
-          "common": "Хондурас"
-        },
-        "swe": {
-          "official": "Republiken Honduras",
-          "common": "Honduras"
-        },
-        "tur": {
-          "official": "Honduras Cumhuriyeti",
-          "common": "Honduras"
-        },
-        "urd": {
-          "official": "جمہوریہ ہونڈوراس",
-          "common": "ہونڈوراس"
-        },
-        "zho": {
-          "official": "洪都拉斯共和国",
-          "common": "洪都拉斯"
-        }
-      },
-      "latlng": [15.0, -86.5],
-      "landlocked": false,
-      "borders": ["GTM", "SLV", "NIC"],
-      "area": 112492.0,
-      "demonyms": {
-        "eng": {
-          "f": "Honduran",
-          "m": "Honduran"
-        },
-        "fra": {
-          "f": "Hondurienne",
-          "m": "Hondurien"
-        }
-      },
-      "flag": "🇭🇳",
-      "maps": {
-        "googleMaps": "https://goo.gl/maps/BbeJK8Sk2VkMHbdF8",
-        "openStreetMaps": "https://www.openstreetmap.org/relation/287670"
-      },
-      "population": 9904608,
-      "gini": {
-        "2019": 48.2
-      },
-      "fifa": "HON",
-      "car": {
-        "signs": ["HN"],
-        "side": "right"
-      },
-      "timezones": ["UTC-06:00"],
-      "continents": ["North America"],
-      "flags": {
-        "png": "https://flagcdn.com/w320/hn.png",
-        "svg": "https://flagcdn.com/hn.svg",
-        "alt": "The flag of Honduras is composed of three equal horizontal bands of turquoise, white and turquoise, with five small five-pointed turquoise stars arranged in a quincuncial pattern at the center of the white band."
-      },
-      "coatOfArms": {
-        "png": "https://mainfacts.com/media/images/coats_of_arms/hn.png",
-        "svg": "https://mainfacts.com/media/images/coats_of_arms/hn.svg"
-      },
-      "startOfWeek": "monday",
-      "capitalInfo": {
-        "latlng": [14.1, -87.22]
-      },
-      "postalCode": {
-        "format": "@@####",
-        "regex": "^([A-Z]{2}\\d{4})$"
-      }
-    },
-    {
-      "name": {
-        "common": "Palau",
-        "official": "Republic of Palau",
+        "common": "b",
+        "official": "b",
         "nativeName": {
           "eng": {
-            "official": "Republic of Palau",
-            "common": "Palau"
-          },
-          "pau": {
-            "official": "Beluu er a Belau",
-            "common": "Belau"
+            "official": "b",
+            "common": "b"
           }
         }
       },
-      "tld": [".pw"],
-      "cca2": "PW",
-      "ccn3": "585",
-      "cca3": "PLW",
-      "cioc": "PLW",
-      "independent": true,
-      "status": "officially-assigned",
-      "unMember": true,
-      "currencies": {
-        "USD": {
-          "name": "United States dollar",
-          "symbol": "$"
-        }
-      },
-      "idd": {
-        "root": "+6",
-        "suffixes": ["80"]
-      },
-      "capital": ["Ngerulmud"],
-      "altSpellings": ["PW", "Republic of Palau", "Beluu er a Belau"],
-      "region": "Oceania",
-      "subregion": "Micronesia",
-      "languages": {
-        "eng": "English",
-        "pau": "Palauan"
-      },
-      "translations": {
-        "ara": {
-          "official": "جمهورية بالاو",
-          "common": "بالاو"
-        },
-        "bre": {
-          "official": "Republik Palau",
-          "common": "Palau"
-        },
-        "ces": {
-          "official": "Republika Palau",
-          "common": "Palau"
-        },
-        "cym": {
-          "official": "Republic of Palau",
-          "common": "Palau"
-        },
-        "deu": {
-          "official": "Republik Palau",
-          "common": "Palau"
-        },
-        "est": {
-          "official": "Belau Vabariik",
-          "common": "Belau"
-        },
-        "fin": {
-          "official": "Palaun tasavalta",
-          "common": "Palau"
-        },
-        "fra": {
-          "official": "République des Palaos (Palau)",
-          "common": "Palaos (Palau)"
-        },
-        "hrv": {
-          "official": "Republika Palau",
-          "common": "Palau"
-        },
-        "hun": {
-          "official": "Palaui Köztársaság",
-          "common": "Palau"
-        },
-        "ita": {
-          "official": "Repubblica di Palau",
-          "common": "Palau"
-        },
-        "jpn": {
-          "official": "パラオ共和国",
-          "common": "パラオ"
-        },
-        "kor": {
-          "official": "팔라우 공화국",
-          "common": "팔라우"
-        },
-        "nld": {
-          "official": "Republiek van Palau",
-          "common": "Palau"
-        },
-        "per": {
-          "official": "جمهوری پالائو",
-          "common": "پالائو"
-        },
-        "pol": {
-          "official": "Republika Palau",
-          "common": "Palau"
-        },
-        "por": {
-          "official": "República de Palau",
-          "common": "Palau"
-        },
-        "rus": {
-          "official": "Республика Палау",
-          "common": "Палау"
-        },
-        "slk": {
-          "official": "Palauská republika",
-          "common": "Palau"
-        },
-        "spa": {
-          "official": "República de Palau",
-          "common": "Palau"
-        },
-        "srp": {
-          "official": "Република Палау",
-          "common": "Палау"
-        },
-        "swe": {
-          "official": "Republiken Palau",
-          "common": "Palau"
-        },
-        "tur": {
-          "official": "Palau Cumhuriyeti",
-          "common": "Palau"
-        },
-        "urd": {
-          "official": "جمہوریہ پلاؤ",
-          "common": "پلاؤ"
-        },
-        "zho": {
-          "official": "帕劳共和国",
-          "common": "帕劳"
-        }
-      },
-      "latlng": [7.5, 134.5],
-      "landlocked": false,
-      "area": 459.0,
-      "demonyms": {
-        "eng": {
-          "f": "Palauan",
-          "m": "Palauan"
-        },
-        "fra": {
-          "f": "Paluane",
-          "m": "Paluan"
-        }
-      },
-      "flag": "🇵🇼",
-      "maps": {
-        "googleMaps": "https://goo.gl/maps/MVasQBbUkQP7qQDR9",
-        "openStreetMaps": "https://www.openstreetmap.org/relation/571805"
-      },
-      "population": 18092,
-      "car": {
-        "signs": ["PAL"],
-        "side": "right"
-      },
-      "timezones": ["UTC+09:00"],
-      "continents": ["Oceania"],
-      "flags": {
-        "png": "https://flagcdn.com/w320/pw.png",
-        "svg": "https://flagcdn.com/pw.svg",
-        "alt": "The flag of Palau has a light blue field with a large golden-yellow circle that is offset slightly towards the hoist side of center."
-      },
-      "coatOfArms": {
-        "png": "https://mainfacts.com/media/images/coats_of_arms/pw.png",
-        "svg": "https://mainfacts.com/media/images/coats_of_arms/pw.svg"
-      },
-      "startOfWeek": "monday",
-      "capitalInfo": {
-        "latlng": [7.5, 134.62]
-      },
-      "postalCode": {
-        "format": "96940",
-        "regex": "^(96940)$"
-      }
+      "capital": [
+        "v"
+      ],
+      "area": 3,
+      "population": 3,
+      "region": "d",
+      "subregion": "d",
+      "id": 3
     },
     {
       "name": {
-        "common": "Australia",
-        "official": "Commonwealth of Australia",
+        "common": "Monaguillolandia",
+        "official": "Monaguillolandia",
         "nativeName": {
           "eng": {
-            "official": "Commonwealth of Australia",
-            "common": "Australia"
+            "official": "Monaguillolandia",
+            "common": "Monaguillolandia"
           }
         }
       },
-      "tld": [".au"],
-      "cca2": "AU",
-      "ccn3": "036",
-      "cca3": "AUS",
-      "cioc": "AUS",
-      "independent": true,
-      "status": "officially-assigned",
-      "unMember": true,
-      "currencies": {
-        "AUD": {
-          "name": "Australian dollar",
-          "symbol": "$"
-        }
-      },
-      "idd": {
-        "root": "+6",
-        "suffixes": ["1"]
-      },
-      "capital": ["Canberra"],
-      "altSpellings": ["AU"],
-      "region": "Oceania",
-      "subregion": "Australia and New Zealand",
-      "languages": {
-        "eng": "English"
-      },
-      "translations": {
-        "ara": {
-          "official": "كومونولث أستراليا",
-          "common": "أستراليا"
-        },
-        "bre": {
-          "official": "Kenglad Aostralia",
-          "common": "Aostralia"
-        },
-        "ces": {
-          "official": "Australské společenství",
-          "common": "Austrálie"
-        },
-        "cym": {
-          "official": "Cymanwlad Awstralia",
-          "common": "Awstralia"
-        },
-        "deu": {
-          "official": "Commonwealth Australien",
-          "common": "Australien"
-        },
-        "est": {
-          "official": "Austraalia Ühendus",
-          "common": "Austraalia"
-        },
-        "fin": {
-          "official": "Australian liittovaltio",
-          "common": "Australia"
-        },
-        "fra": {
-          "official": "Australie",
-          "common": "Australie"
-        },
-        "hrv": {
-          "official": "Commonwealth of Australia",
-          "common": "Australija"
-        },
-        "hun": {
-          "official": "Ausztrál Államszövetség",
-          "common": "Ausztrália"
-        },
-        "ita": {
-          "official": "Commonwealth dell'Australia",
-          "common": "Australia"
-        },
-        "jpn": {
-          "official": "オーストラリア連邦",
-          "common": "オーストラリア"
-        },
-        "kor": {
-          "official": "오스트레일리아 연방",
-          "common": "호주"
-        },
-        "nld": {
-          "official": "Gemenebest van Australië",
-          "common": "Australië"
-        },
-        "per": {
-          "official": "قلمرو همسود استرالیا",
-          "common": "استرالیا"
-        },
-        "pol": {
-          "official": "Związek Australijski",
-          "common": "Australia"
-        },
-        "por": {
-          "official": "Comunidade da Austrália",
-          "common": "Austrália"
-        },
-        "rus": {
-          "official": "Содружество Австралии",
-          "common": "Австралия"
-        },
-        "slk": {
-          "official": "Austrálsky zväz",
-          "common": "Austrália"
-        },
-        "spa": {
-          "official": "Mancomunidad de Australia",
-          "common": "Australia"
-        },
-        "srp": {
-          "official": "Комонвелт Аустралија",
-          "common": "Аустралија"
-        },
-        "swe": {
-          "official": "Australiska statsförbundet",
-          "common": "Australien"
-        },
-        "tur": {
-          "official": "Avustralya Federal Devleti",
-          "common": "Avustralya"
-        },
-        "urd": {
-          "official": "دولتِ مشترکہ آسٹریلیا",
-          "common": "آسٹریلیا"
-        },
-        "zho": {
-          "official": "澳大利亚联邦",
-          "common": "澳大利亚"
-        }
-      },
-      "latlng": [-27.0, 133.0],
-      "landlocked": false,
-      "area": 7692024.0,
-      "demonyms": {
-        "eng": {
-          "f": "Australian",
-          "m": "Australian"
-        },
-        "fra": {
-          "f": "Australienne",
-          "m": "Australien"
-        }
-      },
-      "flag": "🇦🇺",
-      "maps": {
-        "googleMaps": "https://goo.gl/maps/DcjaDa7UbhnZTndH6",
-        "openStreetMaps": "https://www.openstreetmap.org/relation/80500"
-      },
-      "population": 25687041,
-      "gini": {
-        "2014": 34.4
-      },
-      "fifa": "AUS",
-      "car": {
-        "signs": ["AUS"],
-        "side": "left"
-      },
-      "timezones": [
-        "UTC+05:00",
-        "UTC+06:30",
-        "UTC+07:00",
-        "UTC+08:00",
-        "UTC+09:30",
-        "UTC+10:00",
-        "UTC+10:30",
-        "UTC+11:30"
+      "capital": [
+        "Bruno State"
       ],
-      "continents": ["Oceania"],
-      "flags": {
-        "png": "https://flagcdn.com/w320/au.png",
-        "svg": "https://flagcdn.com/au.svg",
-        "alt": "The flag of Australia has a dark blue field. It features the flag of the United Kingdom — the Union Jack — in the canton, beneath which is a large white seven-pointed star. A representation of the Southern Cross constellation, made up of one small five-pointed and four larger seven-pointed white stars, is situated on the fly side of the field."
-      },
-      "coatOfArms": {
-        "png": "https://mainfacts.com/media/images/coats_of_arms/au.png",
-        "svg": "https://mainfacts.com/media/images/coats_of_arms/au.svg"
-      },
-      "startOfWeek": "monday",
-      "capitalInfo": {
-        "latlng": [-35.27, 149.13]
-      },
-      "postalCode": {
-        "format": "####",
-        "regex": "^(\\d{4})$"
-      }
+      "area": 3,
+      "population": 2,
+      "region": "Europa",
+      "subregion": "Europa del Este",
+      "id": 4
     }
   ]
 }

@@ -7,7 +7,7 @@ type PropsType = {
 };
 export function PrivateCard({ country }: PropsType) {
   /*   const handleAddToFavorites = () => {};
-  */
+   */
   return (
     <div className="card">
       <Link
@@ -18,9 +18,7 @@ export function PrivateCard({ country }: PropsType) {
           <h2>{country.name.common}</h2>
           <img role="button" src="./star-icon.png" alt="Add Country Icon" />
         </div>
-        <div className="card-image">
-          <img src={country.flags.png} alt="Country Flag" />
-        </div>
+
         <div className="card-info">
           <p>
             Capital:{' '}

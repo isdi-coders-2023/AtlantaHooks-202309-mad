@@ -4,6 +4,7 @@ import './list_private.scss';
 import { PrivateCard } from '../privateCards/private_card';
 import { PrivatePage } from '../privatePages/private_page';
 import { Country } from '../../model/country.types';
+import { AddNewCountry } from '../country_form/country_form';
 
 export function PrivateList() {
   const {
@@ -17,6 +18,10 @@ export function PrivateList() {
 
   return (
     <div>
+      <details>
+        <summary>Añadir</summary>
+        <AddNewCountry></AddNewCountry>
+      </details>
       <PrivatePage />
       <ul className="country_list">
         {privateCountry
