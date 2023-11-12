@@ -12,7 +12,7 @@ export function Page() {
           <p onClick={() => handleChangePage(-1)} role="button">
             <img
               className="left-arrow"
-              src="./public/sign-of-the-arrow-compass-symbol-is-isolated-on-a-white-background-arrow-compass-icon-color-editable-vector.png"
+              src="./public/arrow.png"
               alt="Previous Page"
             />
           </p>
@@ -21,7 +21,7 @@ export function Page() {
           <p onClick={() => handleChangePage(+1)} role="button">
             <img
               className="right-arrow"
-              src="./public/sign-of-the-arrow-compass-symbol-is-isolated-on-a-white-background-arrow-compass-icon-color-editable-vector.png"
+              src="./public/arrow.png"
               alt="Next Page"
             />
           </p>

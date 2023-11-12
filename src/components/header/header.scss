@@ -6,24 +6,15 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-right: 3rem;
-  padding-left: 5rem;
-  align-items: center;
-  text-align: center;
-  border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
+
   h1 {
     font-size: 3rem;
-    text-align: center;
     margin-top: 0;
     padding-block: 1rem;
     color: white;
-    color: #fff; /* Color del texto */
-    text-shadow: -1px -1px 0 #000,
-      /* Sombra superior izquierda */ 1px -1px 0 #000,
-      /* Sombra superior derecha */ -1px 1px 0 #000,
-      /* Sombra inferior izquierda */ 1px 1px 0 #000; /* Sombra inferior derecha */
+    color: #fff;
+    text-shadow: -1px -1px 0 #000;
+    margin: auto;
   }
 
   p {
