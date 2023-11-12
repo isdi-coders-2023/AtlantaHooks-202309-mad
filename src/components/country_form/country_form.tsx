@@ -17,6 +17,7 @@ export function AddNewCountry() {
     const countryPopulation = parseInt(formData.get('population') as string);
     const countryRegion = formData.get('region') as string;
     const countrySubregion = formData.get('subregion') as string;
+    const countryFlag = formData.get('flag') as string;
 
     const newCountry: Partial<Country> = {
       name: {
@@ -34,6 +35,11 @@ export function AddNewCountry() {
       population: countryPopulation,
       region: countryRegion,
       subregion: countrySubregion,
+      flags: {
+        png: countryFlag,
+        svg: countryFlag,
+        alt: 'Bandera de ' + countryName,
+      },
     };
     addCountry(newCountry);
     form.reset();
@@ -50,6 +56,15 @@ export function AddNewCountry() {
           <div>
             <label htmlFor="country-name">Nombre</label>
             <input type="text" name="name" required />
+          </div>
+          <div>
+            <label htmlFor="country-flag">Bandera</label>
+            <input
+              type="text"
+              name="flag"
+              placeholder="Inserta una URL"
+              required
+            />
           </div>
           <div>
             <label htmlFor="country-capital">Capital</label>

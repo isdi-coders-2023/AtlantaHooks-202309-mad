@@ -12,10 +12,11 @@ export type ActionCountryAll =
 
 type ActionCountryDelete = {
   type: 'delete';
-  payload: Country['name']['common'];
+  payload: Country['id'];
 };
 
 type ActionCountryUpdateCreate = {
+  //
   type: 'update' | 'create';
   payload: Country;
 };
@@ -45,9 +46,7 @@ export type ActionCountry =
   | ActionCountryDelete
   | ActionCountryUpdateCreate;
 
-export const deleteActionCreator = (
-  payload: Country['name']['common']
-): ActionCountry => ({
+export const deleteActionCreator = (payload: Country['id']): ActionCountry => ({
   type: 'delete',
   payload,
 });

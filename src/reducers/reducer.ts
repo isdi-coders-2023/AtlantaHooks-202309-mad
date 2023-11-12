@@ -22,7 +22,7 @@ export function countryReducer(
       return {
         ...state,
         privateCountry: state.privateCountry.filter(
-          (item: Country) => item.name.common !== payload
+          (item: Country) => item.id !== payload
         ),
       };
 
@@ -30,7 +30,7 @@ export function countryReducer(
       return {
         ...state,
         privateCountry: state.privateCountry.map((item: Country) =>
-          item.name.common === payload.name.common ? payload : item
+          item.id === payload.id ? payload : item
         ),
       };
 

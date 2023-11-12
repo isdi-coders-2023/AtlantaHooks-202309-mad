@@ -55,7 +55,7 @@ export class PrivateRepo {
   }
 
   async updateCountry(
-    id: Country['name']['common'],
+    id: Country['id'],
     updatedCountry: Partial<Country>
   ): Promise<Country> {
     const finalUrl = `${this.privateApiUrl}/${id}`;
@@ -71,7 +71,7 @@ export class PrivateRepo {
     return response.json();
   }
 
-  async deleteCountry(id: Country['name']['common']): Promise<Country[]> {
+  async deleteCountry(id: Country['id']): Promise<Country[]> {
     const finalUrl = `${this.privateApiUrl}/${id}`;
     const response = await fetch(finalUrl, {
       method: 'DELETE',

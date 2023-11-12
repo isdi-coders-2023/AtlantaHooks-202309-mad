@@ -70,7 +70,7 @@ export function useCountry() {
   };
 
   const updateCountry = async (
-    id: Country['name']['common'],
+    id: Country['id'],
     country: Partial<Country>
   ) => {
     try {
@@ -81,7 +81,7 @@ export function useCountry() {
     }
   };
 
-  const deleteCountry = async (id: Country['name']['common']) => {
+  const deleteCountry = async (id: Country['id']) => {
     try {
       // Asíncrona -> API
       await privaterepo.deleteCountry(id);
