@@ -2,10 +2,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
-  background-image: URL('../public/3.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
   padding-inline: 2rem;
 }
 
@@ -32,8 +29,4 @@ details {
   text-align: center;
   font-size: 1.5rem;
   padding-top: 2rem;
-  background-image: URL('../public/3.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }

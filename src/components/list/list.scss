@@ -3,11 +3,6 @@
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
   padding-inline: 2rem;
-  background-image: URL('../public/3.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
 }
 
 @media screen and (max-width: 1020px) {
